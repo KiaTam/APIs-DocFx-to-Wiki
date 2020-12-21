@@ -33,17 +33,17 @@ var turndownService = new TurndownService()
 
 
 var localPath = 'DocFx/_site/api/'
-inputFilePath = localPath.concat(iD[1][1])
-//?console.log(inputFilePath);
-var  htmlContent= fs.readFileSync(inputFilePath, 'utf8');
-
-//?var htmlContent ='<h1>sampleHTML:)!</h1>'
-// converts HTML text to MD
-var markdownContent = turndownService.turndown(htmlContent);
-//var markdown = 'Class FrameworkConstants  ';
-
 for(i=0;i<iD[1].length; i++)
 {
+   inputFilePath = localPath.concat(iD[1][i])
+   //?console.log(inputFilePath);
+   var  htmlContent= fs.readFileSync(inputFilePath, 'utf8');
+
+   //?var htmlContent ='<h1>sampleHTML:)!</h1>'
+   // converts HTML text to MD
+   var markdownContent = turndownService.turndown(htmlContent);
+   //var markdown = 'Class FrameworkConstants  ';
+
    var outputFilePath = iD[1][i];
    outputFilePath = outputFilePath.replace('.html', '.md');
    outputFilePath ='DocFx/'.concat(outputFilePath);
