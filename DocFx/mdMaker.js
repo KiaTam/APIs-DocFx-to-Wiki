@@ -42,13 +42,15 @@ var  htmlContent= fs.readFileSync(inputFilePath, 'utf8');
 var markdownContent = turndownService.turndown(htmlContent);
 //var markdown = 'Class FrameworkConstants  ';
 
-var outputFilePath = iD[1][1];
-outputFilePath = outputFilePath.replace('.html', '.md');
-outputFilePath ='DocFx/'.concat(outputFilePath);
-fs.writeFile(outputFilePath, markdownContent, function (err) {
-  if (err) return console.log(err);
-});
-
+for(i=0;i<iD[1].length; i++)
+{
+   var outputFilePath = iD[1][1];
+   outputFilePath = outputFilePath.replace('.html', '.md');
+   outputFilePath ='DocFx/'.concat(outputFilePath);
+   fs.writeFile(outputFilePath, markdownContent, function (err) {
+      if (err) return console.log(err);
+   });
+}
 
 //Writing titles and sub-titles of Wiki-sidebar to the -Sidebar.md
 //Writing titles and sub-titles of Wiki-sidebar to the -Sidebar.md
@@ -63,7 +65,7 @@ for(i=0;i<iD[0].length; i++)
 		//Main title
 		outputTitle0 = iD[1][i];
 		outputTitle0 = outputTitle0.replace('.html', '');
-		outputTitle1 = '* ['.concat(outputTitle0, '](https://github.com/KiaTam/TestWiki/wiki/');
+		outputTitle1 = '* ['.concat(outputTitle0, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 		//outputTitle0 = outputTitle0.concat('](https://github.com/adriantanasa/github-wiki-sidebar/wiki/');
 		outputTitle1 = outputTitle1.concat(outputTitle0, ')');
 	}else //if(iD[0][i] == 'nav level2')
@@ -71,8 +73,8 @@ for(i=0;i<iD[0].length; i++)
 		//Subtitle title
 		outputTitle0 = iD[1][i];
 		outputTitle0 = outputTitle0.replace('.html', '');
-		outputTitle1 = '  * ['.concat(outputTitle0, '](https://github.com/KiaTam/TestWiki/wiki/');
-		//outputTitle0 = outputTitle0.concat('](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage%3A-');
+		outputTitle1 = '  * ['.concat(outputTitle0, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
+		//outputTitle0 = outputTitle0.concat('](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/Usage%3A-');
 		outputTitle1 = outputTitle1.concat(outputTitle0, ')');
 	}
 	
