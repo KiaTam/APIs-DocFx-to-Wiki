@@ -44,7 +44,7 @@ var markdownContent = turndownService.turndown(htmlContent);
 
 for(i=0;i<iD[1].length; i++)
 {
-   var outputFilePath = iD[1][1];
+   var outputFilePath = iD[1][i];
    outputFilePath = outputFilePath.replace('.html', '.md');
    outputFilePath ='DocFx/'.concat(outputFilePath);
    fs.writeFile(outputFilePath, markdownContent, function (err) {
