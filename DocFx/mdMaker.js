@@ -29,6 +29,8 @@ $("li").each(function(i,element){
 
 //Turndown converts HTML fille format text to Markdown
 var TurndownService = require('turndown')
+var turndownPluginGfm = require('turndown-plugin-gfm')
+
 var gfm = turndownPluginGfm.gfm
 var turndownService = new TurndownService()
 turndownService.use(gfm)
