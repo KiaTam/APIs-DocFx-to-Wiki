@@ -29,7 +29,11 @@ $("li").each(function(i,element){
 
 //Turndown converts HTML fille format text to Markdown
 var TurndownService = require('turndown')
+var gfm = turndownPluginGfm.gfm
 var turndownService = new TurndownService()
+turndownService.use(gfm)
+
+//var turndownService = new TurndownService()
 
 
 var localPath = 'DocFx/_site/api/'
