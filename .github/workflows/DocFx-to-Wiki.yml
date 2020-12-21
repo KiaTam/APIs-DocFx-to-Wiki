@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+
+name: DocFx
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on: [pull_request, workflow_dispatch]
+
+jobs:
+  DocFx_job:
+    runs-on: ubuntu-latest
+    name: Test DocFx on GitHub
+    steps:
+    - uses: actions/checkout@v1
+    # ...
+    - uses: nikeee/docfx-action@v1.0.0
+      name: Build Documentation
+      with:
+        args: DocFx/docfx.json
+ 
+    - run: cd DocFx/_site
+    - run: npm install cheerio
+    - run: npm install turndown 
+    - run: node DocFx/MDMaker.js
+    - uses: SwiftDocOrg/github-wiki-publish-action@v1
+      with:
+        path: "DocFx"
+      env:
+              GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+
