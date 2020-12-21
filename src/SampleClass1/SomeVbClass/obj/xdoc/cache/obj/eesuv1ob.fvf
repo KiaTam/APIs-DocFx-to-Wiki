@@ -1,0 +1,970 @@
+id: VBTestClass1
+language: VB
+name:
+  Default: VBTestClass1
+qualifiedName:
+  Default: VBTestClass1
+type: Assembly
+modifiers: {}
+items:
+- id: VBTestClass1
+  commentId: N:VBTestClass1
+  language: VB
+  name:
+    CSharp: VBTestClass1
+    VB: VBTestClass1
+  nameWithType:
+    CSharp: VBTestClass1
+    VB: VBTestClass1
+  qualifiedName:
+    CSharp: VBTestClass1
+    VB: VBTestClass1
+  type: Namespace
+  assemblies:
+  - VBTestClass1
+  modifiers: {}
+  items:
+  - id: VBTestClass1.Class1
+    commentId: T:VBTestClass1.Class1
+    language: VB
+    name:
+      CSharp: Class1
+      VB: Class1
+    nameWithType:
+      CSharp: Class1
+      VB: Class1
+    qualifiedName:
+      CSharp: VBTestClass1.Class1
+      VB: VBTestClass1.Class1
+    type: Class
+    assemblies:
+    - VBTestClass1
+    namespace: VBTestClass1
+    source:
+      remote:
+        path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/SomeVbClass/Class1.vb
+      id: Class1
+      path: src/SampleClass1/SomeVbClass/Class1.vb
+      startLine: 3
+    summary: "\nThis is summary from vb class...\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class Class1 : BaseClass1'
+        VB: >-
+          Public Class Class1
+
+              Inherits BaseClass1
+    inheritance:
+    - System.Object
+    - VBTestClass1.BaseClass1
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.Finalize
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: VBTestClass1.Class1.ValueClass
+      commentId: F:VBTestClass1.Class1.ValueClass
+      language: VB
+      name:
+        CSharp: ValueClass
+        VB: ValueClass
+      nameWithType:
+        CSharp: Class1.ValueClass
+        VB: Class1.ValueClass
+      qualifiedName:
+        CSharp: VBTestClass1.Class1.ValueClass
+        VB: VBTestClass1.Class1.ValueClass
+      type: Field
+      assemblies:
+      - VBTestClass1
+      namespace: VBTestClass1
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/SomeVbClass/Class1.vb
+        id: ValueClass
+        path: src/SampleClass1/SomeVbClass/Class1.vb
+        startLine: 11
+      summary: "\nThis is a *Value* type\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Class1 ValueClass
+          VB: Public ValueClass As Class1
+        return:
+          type: VBTestClass1.Class1
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: VBTestClass1.Class1.Keyword
+      commentId: P:VBTestClass1.Class1.Keyword
+      language: VB
+      name:
+        CSharp: Keyword
+        VB: Keyword
+      nameWithType:
+        CSharp: Class1.Keyword
+        VB: Class1.Keyword
+      qualifiedName:
+        CSharp: VBTestClass1.Class1.Keyword
+        VB: VBTestClass1.Class1.Keyword
+      type: Property
+      assemblies:
+      - VBTestClass1
+      namespace: VBTestClass1
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/SomeVbClass/Class1.vb
+        id: Keyword
+        path: src/SampleClass1/SomeVbClass/Class1.vb
+        startLine: 13
+      syntax:
+        content:
+          CSharp: >-
+            [Obsolete("This member is obsolete.", true)]
+
+            public CounterSampleCalculator Keyword { get; }
+          VB: >-
+            <Obsolete("This member is obsolete.", True)>
+
+            Public ReadOnly Property Keyword As CounterSampleCalculator
+        parameters: []
+        return:
+          type: System.Diagnostics.CounterSampleCalculator
+      overload: VBTestClass1.Class1.Keyword*
+      attributes:
+      - type: System.ObsoleteAttribute
+        ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+        arguments:
+        - type: System.String
+          value: This member is obsolete.
+        - type: System.Boolean
+          value: true
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+      commentId: M:VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+      language: VB
+      name:
+        CSharp: WithDeclarationKeyword(CounterSampleCalculator)
+        VB: WithDeclarationKeyword(CounterSampleCalculator)
+      nameWithType:
+        CSharp: Class1.WithDeclarationKeyword(CounterSampleCalculator)
+        VB: Class1.WithDeclarationKeyword(CounterSampleCalculator)
+      qualifiedName:
+        CSharp: VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+        VB: VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+      type: Method
+      assemblies:
+      - VBTestClass1
+      namespace: VBTestClass1
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/SomeVbClass/Class1.vb
+        id: WithDeclarationKeyword
+        path: src/SampleClass1/SomeVbClass/Class1.vb
+        startLine: 23
+      summary: "\nWhat is **Sub**?\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public override DateTime WithDeclarationKeyword(CounterSampleCalculator keyword)
+          VB: Public Overrides Function WithDeclarationKeyword(keyword As CounterSampleCalculator) As Date
+        parameters:
+        - id: keyword
+          type: System.Diagnostics.CounterSampleCalculator
+        return:
+          type: System.DateTime
+      overload: VBTestClass1.Class1.WithDeclarationKeyword*
+      overridden: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+      modifiers:
+        CSharp:
+        - public
+        - override
+        VB:
+        - Public
+        - Overrides
+    - id: VBTestClass1.Class1.Value(System.String)
+      commentId: M:VBTestClass1.Class1.Value(System.String)
+      language: VB
+      name:
+        CSharp: Value(String)
+        VB: Value(String)
+      nameWithType:
+        CSharp: Class1.Value(String)
+        VB: Class1.Value(String)
+      qualifiedName:
+        CSharp: VBTestClass1.Class1.Value(System.String)
+        VB: VBTestClass1.Class1.Value(System.String)
+      type: Method
+      assemblies:
+      - VBTestClass1
+      namespace: VBTestClass1
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/SomeVbClass/Class1.vb
+        id: Value
+        path: src/SampleClass1/SomeVbClass/Class1.vb
+        startLine: 34
+      summary: "\nThis is a *Function*\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int Value(string name)
+          VB: Public Function Value(name As String) As Integer
+        parameters:
+        - id: name
+          type: System.String
+          description: >-
+            Name as the **String**
+
+            value
+        return:
+          type: System.Int32
+          description: >-
+            **Returns**
+
+            Ahooo
+      overload: VBTestClass1.Class1.Value*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: VBTestClass1.BaseClass1
+    commentId: T:VBTestClass1.BaseClass1
+    language: VB
+    name:
+      CSharp: BaseClass1
+      VB: BaseClass1
+    nameWithType:
+      CSharp: BaseClass1
+      VB: BaseClass1
+    qualifiedName:
+      CSharp: VBTestClass1.BaseClass1
+      VB: VBTestClass1.BaseClass1
+    type: Class
+    assemblies:
+    - VBTestClass1
+    namespace: VBTestClass1
+    source:
+      remote:
+        path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/SomeVbClass/Class1.vb
+      id: BaseClass1
+      path: src/SampleClass1/SomeVbClass/Class1.vb
+      startLine: 42
+    summary: "\nThis is the BaseClass\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public abstract class BaseClass1
+        VB: Public MustInherit Class BaseClass1
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.Finalize
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - abstract
+      - class
+      VB:
+      - Public
+      - MustInherit
+      - Class
+    items:
+    - id: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+      commentId: M:VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+      language: VB
+      name:
+        CSharp: WithDeclarationKeyword(CounterSampleCalculator)
+        VB: WithDeclarationKeyword(CounterSampleCalculator)
+      nameWithType:
+        CSharp: BaseClass1.WithDeclarationKeyword(CounterSampleCalculator)
+        VB: BaseClass1.WithDeclarationKeyword(CounterSampleCalculator)
+      qualifiedName:
+        CSharp: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+        VB: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+      type: Method
+      assemblies:
+      - VBTestClass1
+      namespace: VBTestClass1
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/SomeVbClass/Class1.vb
+        id: WithDeclarationKeyword
+        path: src/SampleClass1/SomeVbClass/Class1.vb
+        startLine: 43
+      syntax:
+        content:
+          CSharp: public abstract DateTime WithDeclarationKeyword(CounterSampleCalculator keyword)
+          VB: Public MustOverride Function WithDeclarationKeyword(keyword As CounterSampleCalculator) As Date
+        parameters:
+        - id: keyword
+          type: System.Diagnostics.CounterSampleCalculator
+        return:
+          type: System.DateTime
+      overload: VBTestClass1.BaseClass1.WithDeclarationKeyword*
+      modifiers:
+        CSharp:
+        - public
+        - abstract
+        VB:
+        - Public
+        - MustOverride
+references:
+  VBTestClass1:
+    name:
+      CSharp:
+      - name: VBTestClass1
+        nameWithType: VBTestClass1
+        qualifiedName: VBTestClass1
+      VB:
+      - name: VBTestClass1
+        nameWithType: VBTestClass1
+        qualifiedName: VBTestClass1
+    isDefinition: true
+    commentId: N:VBTestClass1
+  VBTestClass1.BaseClass1:
+    name:
+      CSharp:
+      - id: VBTestClass1.BaseClass1
+        name: BaseClass1
+        nameWithType: BaseClass1
+        qualifiedName: VBTestClass1.BaseClass1
+      VB:
+      - id: VBTestClass1.BaseClass1
+        name: BaseClass1
+        nameWithType: BaseClass1
+        qualifiedName: VBTestClass1.BaseClass1
+    isDefinition: true
+    parent: VBTestClass1
+    commentId: T:VBTestClass1.BaseClass1
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.Finalize:
+    name:
+      CSharp:
+      - id: System.Object.Finalize
+        name: Finalize
+        nameWithType: Object.Finalize
+        qualifiedName: System.Object.Finalize
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Finalize
+        name: Finalize
+        nameWithType: Object.Finalize
+        qualifiedName: System.Object.Finalize
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Finalize
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  VBTestClass1.Class1:
+    name:
+      CSharp:
+      - id: VBTestClass1.Class1
+        name: Class1
+        nameWithType: Class1
+        qualifiedName: VBTestClass1.Class1
+      VB:
+      - id: VBTestClass1.Class1
+        name: Class1
+        nameWithType: Class1
+        qualifiedName: VBTestClass1.Class1
+    isDefinition: true
+    parent: VBTestClass1
+    commentId: T:VBTestClass1.Class1
+  System.Diagnostics:
+    name:
+      CSharp:
+      - name: System.Diagnostics
+        nameWithType: System.Diagnostics
+        qualifiedName: System.Diagnostics
+        isExternal: true
+      VB:
+      - name: System.Diagnostics
+        nameWithType: System.Diagnostics
+        qualifiedName: System.Diagnostics
+    isDefinition: true
+    commentId: N:System.Diagnostics
+  System.Diagnostics.CounterSampleCalculator:
+    name:
+      CSharp:
+      - id: System.Diagnostics.CounterSampleCalculator
+        name: CounterSampleCalculator
+        nameWithType: CounterSampleCalculator
+        qualifiedName: System.Diagnostics.CounterSampleCalculator
+        isExternal: true
+      VB:
+      - id: System.Diagnostics.CounterSampleCalculator
+        name: CounterSampleCalculator
+        nameWithType: CounterSampleCalculator
+        qualifiedName: System.Diagnostics.CounterSampleCalculator
+        isExternal: true
+    isDefinition: true
+    parent: System.Diagnostics
+    commentId: T:System.Diagnostics.CounterSampleCalculator
+  VBTestClass1.Class1.Keyword*:
+    name:
+      CSharp:
+      - id: VBTestClass1.Class1.Keyword*
+        name: Keyword
+        nameWithType: Class1.Keyword
+        qualifiedName: VBTestClass1.Class1.Keyword
+      VB:
+      - id: VBTestClass1.Class1.Keyword*
+        name: Keyword
+        nameWithType: Class1.Keyword
+        qualifiedName: VBTestClass1.Class1.Keyword
+    isDefinition: true
+    commentId: Overload:VBTestClass1.Class1.Keyword
+  System.ObsoleteAttribute:
+    name:
+      CSharp:
+      - id: System.ObsoleteAttribute
+        name: ObsoleteAttribute
+        nameWithType: ObsoleteAttribute
+        qualifiedName: System.ObsoleteAttribute
+        isExternal: true
+      VB:
+      - id: System.ObsoleteAttribute
+        name: ObsoleteAttribute
+        nameWithType: ObsoleteAttribute
+        qualifiedName: System.ObsoleteAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.ObsoleteAttribute
+  System.ObsoleteAttribute.#ctor(System.String,System.Boolean):
+    name:
+      CSharp:
+      - id: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+        name: ObsoleteAttribute
+        nameWithType: ObsoleteAttribute.ObsoleteAttribute
+        qualifiedName: System.ObsoleteAttribute.ObsoleteAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+        name: ObsoleteAttribute
+        nameWithType: ObsoleteAttribute.ObsoleteAttribute
+        qualifiedName: System.ObsoleteAttribute.ObsoleteAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ObsoleteAttribute
+    commentId: M:System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  System.Boolean:
+    name:
+      CSharp:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Boolean
+  System.DateTime:
+    name:
+      CSharp:
+      - id: System.DateTime
+        name: DateTime
+        nameWithType: DateTime
+        qualifiedName: System.DateTime
+        isExternal: true
+      VB:
+      - id: System.DateTime
+        name: DateTime
+        nameWithType: DateTime
+        qualifiedName: System.DateTime
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.DateTime
+  VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator):
+    name:
+      CSharp:
+      - id: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+        name: WithDeclarationKeyword
+        nameWithType: BaseClass1.WithDeclarationKeyword
+        qualifiedName: VBTestClass1.BaseClass1.WithDeclarationKeyword
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Diagnostics.CounterSampleCalculator
+        name: CounterSampleCalculator
+        nameWithType: CounterSampleCalculator
+        qualifiedName: System.Diagnostics.CounterSampleCalculator
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+        name: WithDeclarationKeyword
+        nameWithType: BaseClass1.WithDeclarationKeyword
+        qualifiedName: VBTestClass1.BaseClass1.WithDeclarationKeyword
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Diagnostics.CounterSampleCalculator
+        name: CounterSampleCalculator
+        nameWithType: CounterSampleCalculator
+        qualifiedName: System.Diagnostics.CounterSampleCalculator
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: VBTestClass1.BaseClass1
+    commentId: M:VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+  VBTestClass1.Class1.WithDeclarationKeyword*:
+    name:
+      CSharp:
+      - id: VBTestClass1.Class1.WithDeclarationKeyword*
+        name: WithDeclarationKeyword
+        nameWithType: Class1.WithDeclarationKeyword
+        qualifiedName: VBTestClass1.Class1.WithDeclarationKeyword
+      VB:
+      - id: VBTestClass1.Class1.WithDeclarationKeyword*
+        name: WithDeclarationKeyword
+        nameWithType: Class1.WithDeclarationKeyword
+        qualifiedName: VBTestClass1.Class1.WithDeclarationKeyword
+    isDefinition: true
+    commentId: Overload:VBTestClass1.Class1.WithDeclarationKeyword
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  VBTestClass1.Class1.Value*:
+    name:
+      CSharp:
+      - id: VBTestClass1.Class1.Value*
+        name: Value
+        nameWithType: Class1.Value
+        qualifiedName: VBTestClass1.Class1.Value
+      VB:
+      - id: VBTestClass1.Class1.Value*
+        name: Value
+        nameWithType: Class1.Value
+        qualifiedName: VBTestClass1.Class1.Value
+    isDefinition: true
+    commentId: Overload:VBTestClass1.Class1.Value
+  VBTestClass1.BaseClass1.WithDeclarationKeyword*:
+    name:
+      CSharp:
+      - id: VBTestClass1.BaseClass1.WithDeclarationKeyword*
+        name: WithDeclarationKeyword
+        nameWithType: BaseClass1.WithDeclarationKeyword
+        qualifiedName: VBTestClass1.BaseClass1.WithDeclarationKeyword
+      VB:
+      - id: VBTestClass1.BaseClass1.WithDeclarationKeyword*
+        name: WithDeclarationKeyword
+        nameWithType: BaseClass1.WithDeclarationKeyword
+        qualifiedName: VBTestClass1.BaseClass1.WithDeclarationKeyword
+    isDefinition: true
+    commentId: Overload:VBTestClass1.BaseClass1.WithDeclarationKeyword

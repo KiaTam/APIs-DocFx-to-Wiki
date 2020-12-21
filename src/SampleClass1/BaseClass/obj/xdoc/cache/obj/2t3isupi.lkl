@@ -1,0 +1,1129 @@
+id: BaseClassForTestClass1
+language: CSharp
+name:
+  Default: BaseClassForTestClass1
+qualifiedName:
+  Default: BaseClassForTestClass1
+type: Assembly
+modifiers: {}
+items:
+- id: Microsoft.DevDiv
+  commentId: N:Microsoft.DevDiv
+  language: CSharp
+  name:
+    CSharp: Microsoft.DevDiv
+    VB: Microsoft.DevDiv
+  nameWithType:
+    CSharp: Microsoft.DevDiv
+    VB: Microsoft.DevDiv
+  qualifiedName:
+    CSharp: Microsoft.DevDiv
+    VB: Microsoft.DevDiv
+  type: Namespace
+  assemblies:
+  - BaseClassForTestClass1
+  modifiers: {}
+  items:
+  - id: Microsoft.DevDiv.ContainersRefType
+    commentId: T:Microsoft.DevDiv.ContainersRefType
+    language: CSharp
+    name:
+      CSharp: ContainersRefType
+      VB: ContainersRefType
+    nameWithType:
+      CSharp: ContainersRefType
+      VB: ContainersRefType
+    qualifiedName:
+      CSharp: Microsoft.DevDiv.ContainersRefType
+      VB: Microsoft.DevDiv.ContainersRefType
+    type: Struct
+    assemblies:
+    - BaseClassForTestClass1
+    namespace: Microsoft.DevDiv
+    source:
+      remote:
+        path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+      id: ContainersRefType
+      path: src/SampleClass1/BaseClass/BaseClass.cs
+      startLine: 11
+    summary: "\nStruct ContainersRefType\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public struct ContainersRefType
+        VB: Public Structure ContainersRefType
+    inheritedMembers:
+    - System.ValueType.Equals(System.Object)
+    - System.ValueType.GetHashCode
+    - System.ValueType.ToString
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetType
+    modifiers:
+      CSharp:
+      - public
+      - struct
+      VB:
+      - Public
+      - Structure
+    items:
+    - id: Microsoft.DevDiv.ContainersRefType.ColorCount
+      commentId: F:Microsoft.DevDiv.ContainersRefType.ColorCount
+      language: CSharp
+      name:
+        CSharp: ColorCount
+        VB: ColorCount
+      nameWithType:
+        CSharp: ContainersRefType.ColorCount
+        VB: ContainersRefType.ColorCount
+      qualifiedName:
+        CSharp: Microsoft.DevDiv.ContainersRefType.ColorCount
+        VB: Microsoft.DevDiv.ContainersRefType.ColorCount
+      type: Field
+      assemblies:
+      - BaseClassForTestClass1
+      namespace: Microsoft.DevDiv
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+        id: ColorCount
+        path: src/SampleClass1/BaseClass/BaseClass.cs
+        startLine: 17
+      summary: "\nColorCount\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public long ColorCount
+          VB: Public ColorCount As Long
+        return:
+          type: System.Int64
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Microsoft.DevDiv.ContainersRefType.GetColorCount
+      commentId: P:Microsoft.DevDiv.ContainersRefType.GetColorCount
+      language: CSharp
+      name:
+        CSharp: GetColorCount
+        VB: GetColorCount
+      nameWithType:
+        CSharp: ContainersRefType.GetColorCount
+        VB: ContainersRefType.GetColorCount
+      qualifiedName:
+        CSharp: Microsoft.DevDiv.ContainersRefType.GetColorCount
+        VB: Microsoft.DevDiv.ContainersRefType.GetColorCount
+      type: Property
+      assemblies:
+      - BaseClassForTestClass1
+      namespace: Microsoft.DevDiv
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+        id: GetColorCount
+        path: src/SampleClass1/BaseClass/BaseClass.cs
+        startLine: 49
+      summary: "\nGetColorCount\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public long GetColorCount { get; }
+          VB: Public ReadOnly Property GetColorCount As Long
+        parameters: []
+        return:
+          type: System.Int64
+      overload: Microsoft.DevDiv.ContainersRefType.GetColorCount*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod(System.Object[])
+      commentId: M:Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod(System.Object[])
+      language: CSharp
+      name:
+        CSharp: ContainersRefTypeNonRefMethod(Object[])
+        VB: ContainersRefTypeNonRefMethod(Object())
+      nameWithType:
+        CSharp: ContainersRefType.ContainersRefTypeNonRefMethod(Object[])
+        VB: ContainersRefType.ContainersRefTypeNonRefMethod(Object())
+      qualifiedName:
+        CSharp: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod(System.Object[])
+        VB: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod(System.Object())
+      type: Method
+      assemblies:
+      - BaseClassForTestClass1
+      namespace: Microsoft.DevDiv
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+        id: ContainersRefTypeNonRefMethod
+        path: src/SampleClass1/BaseClass/BaseClass.cs
+        startLine: 67
+      summary: "\nContainersRefTypeNonRefMethod\n<param name=\"parmsArray\">array</param>\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static int ContainersRefTypeNonRefMethod(params object[] parmsArray)
+          VB: Public Shared Function ContainersRefTypeNonRefMethod(ParamArray parmsArray As Object()) As Integer
+        parameters:
+        - id: parmsArray
+          type: System.Object[]
+        return:
+          type: System.Int32
+      overload: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeEventHandler
+      commentId: E:Microsoft.DevDiv.ContainersRefType.ContainersRefTypeEventHandler
+      language: CSharp
+      name:
+        CSharp: ContainersRefTypeEventHandler
+        VB: ContainersRefTypeEventHandler
+      nameWithType:
+        CSharp: ContainersRefType.ContainersRefTypeEventHandler
+        VB: ContainersRefType.ContainersRefTypeEventHandler
+      qualifiedName:
+        CSharp: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeEventHandler
+        VB: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeEventHandler
+      type: Event
+      assemblies:
+      - BaseClassForTestClass1
+      namespace: Microsoft.DevDiv
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+        id: ContainersRefTypeEventHandler
+        path: src/SampleClass1/BaseClass/BaseClass.cs
+        startLine: 85
+      syntax:
+        content:
+          CSharp: public event EventHandler ContainersRefTypeEventHandler
+          VB: Public Event ContainersRefTypeEventHandler As EventHandler
+        return:
+          type: System.EventHandler
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: Microsoft.DevDiv.ContainersRefType.ColorType
+    commentId: T:Microsoft.DevDiv.ContainersRefType.ColorType
+    language: CSharp
+    name:
+      CSharp: ContainersRefType.ColorType
+      VB: ContainersRefType.ColorType
+    nameWithType:
+      CSharp: ContainersRefType.ColorType
+      VB: ContainersRefType.ColorType
+    qualifiedName:
+      CSharp: Microsoft.DevDiv.ContainersRefType.ColorType
+      VB: Microsoft.DevDiv.ContainersRefType.ColorType
+    type: Enum
+    assemblies:
+    - BaseClassForTestClass1
+    namespace: Microsoft.DevDiv
+    source:
+      remote:
+        path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+      id: ColorType
+      path: src/SampleClass1/BaseClass/BaseClass.cs
+      startLine: 23
+    summary: "\nEnumeration ColorType\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public enum ColorType
+        VB: Public Enum ColorType
+    modifiers:
+      CSharp:
+      - public
+      - enum
+      VB:
+      - Public
+      - Enum
+    items:
+    - id: Microsoft.DevDiv.ContainersRefType.ColorType.Red
+      commentId: F:Microsoft.DevDiv.ContainersRefType.ColorType.Red
+      language: CSharp
+      name:
+        CSharp: Red
+        VB: Red
+      nameWithType:
+        CSharp: ContainersRefType.ColorType.Red
+        VB: ContainersRefType.ColorType.Red
+      qualifiedName:
+        CSharp: Microsoft.DevDiv.ContainersRefType.ColorType.Red
+        VB: Microsoft.DevDiv.ContainersRefType.ColorType.Red
+      type: Field
+      assemblies:
+      - BaseClassForTestClass1
+      namespace: Microsoft.DevDiv
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+        id: Red
+        path: src/SampleClass1/BaseClass/BaseClass.cs
+        startLine: 28
+      summary: "\nred\n"
+      example: []
+      syntax:
+        content:
+          CSharp: Red = 0
+          VB: Red = 0
+        return:
+          type: Microsoft.DevDiv.ContainersRefType.ColorType
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+    - id: Microsoft.DevDiv.ContainersRefType.ColorType.Blue
+      commentId: F:Microsoft.DevDiv.ContainersRefType.ColorType.Blue
+      language: CSharp
+      name:
+        CSharp: Blue
+        VB: Blue
+      nameWithType:
+        CSharp: ContainersRefType.ColorType.Blue
+        VB: ContainersRefType.ColorType.Blue
+      qualifiedName:
+        CSharp: Microsoft.DevDiv.ContainersRefType.ColorType.Blue
+        VB: Microsoft.DevDiv.ContainersRefType.ColorType.Blue
+      type: Field
+      assemblies:
+      - BaseClassForTestClass1
+      namespace: Microsoft.DevDiv
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+        id: Blue
+        path: src/SampleClass1/BaseClass/BaseClass.cs
+        startLine: 32
+      summary: "\nblue\n"
+      example: []
+      syntax:
+        content:
+          CSharp: Blue = 1
+          VB: Blue = 1
+        return:
+          type: Microsoft.DevDiv.ContainersRefType.ColorType
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+    - id: Microsoft.DevDiv.ContainersRefType.ColorType.Yellow
+      commentId: F:Microsoft.DevDiv.ContainersRefType.ColorType.Yellow
+      language: CSharp
+      name:
+        CSharp: Yellow
+        VB: Yellow
+      nameWithType:
+        CSharp: ContainersRefType.ColorType.Yellow
+        VB: ContainersRefType.ColorType.Yellow
+      qualifiedName:
+        CSharp: Microsoft.DevDiv.ContainersRefType.ColorType.Yellow
+        VB: Microsoft.DevDiv.ContainersRefType.ColorType.Yellow
+      type: Field
+      assemblies:
+      - BaseClassForTestClass1
+      namespace: Microsoft.DevDiv
+      source:
+        remote:
+          path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+        id: Yellow
+        path: src/SampleClass1/BaseClass/BaseClass.cs
+        startLine: 36
+      summary: "\nyellow\n"
+      example: []
+      syntax:
+        content:
+          CSharp: Yellow = 2
+          VB: Yellow = 2
+        return:
+          type: Microsoft.DevDiv.ContainersRefType.ColorType
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+  - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate
+    commentId: T:Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate
+    language: CSharp
+    name:
+      CSharp: ContainersRefType.ContainersRefTypeDelegate
+      VB: ContainersRefType.ContainersRefTypeDelegate
+    nameWithType:
+      CSharp: ContainersRefType.ContainersRefTypeDelegate
+      VB: ContainersRefType.ContainersRefTypeDelegate
+    qualifiedName:
+      CSharp: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate
+      VB: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate
+    type: Delegate
+    assemblies:
+    - BaseClassForTestClass1
+    namespace: Microsoft.DevDiv
+    source:
+      remote:
+        path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+      id: ContainersRefTypeDelegate
+      path: src/SampleClass1/BaseClass/BaseClass.cs
+      startLine: 43
+    summary: "\nDelegate ContainersRefTypeDelegate\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public delegate void ContainersRefTypeDelegate();
+        VB: Public Delegate Sub ContainersRefTypeDelegate
+    modifiers:
+      CSharp:
+      - public
+      - delegate
+      VB:
+      - Public
+      - Delegate
+    items: []
+  - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+    commentId: T:Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+    language: CSharp
+    name:
+      CSharp: ContainersRefType.ContainersRefTypeChildInterface
+      VB: ContainersRefType.ContainersRefTypeChildInterface
+    nameWithType:
+      CSharp: ContainersRefType.ContainersRefTypeChildInterface
+      VB: ContainersRefType.ContainersRefTypeChildInterface
+    qualifiedName:
+      CSharp: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+      VB: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+    type: Interface
+    assemblies:
+    - BaseClassForTestClass1
+    namespace: Microsoft.DevDiv
+    source:
+      remote:
+        path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+      id: ContainersRefTypeChildInterface
+      path: src/SampleClass1/BaseClass/BaseClass.cs
+      startLine: 73
+    syntax:
+      content:
+        CSharp: public interface ContainersRefTypeChildInterface
+        VB: Public Interface ContainersRefTypeChildInterface
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items: []
+  - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild
+    commentId: T:Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild
+    language: CSharp
+    name:
+      CSharp: ContainersRefType.ContainersRefTypeChild
+      VB: ContainersRefType.ContainersRefTypeChild
+    nameWithType:
+      CSharp: ContainersRefType.ContainersRefTypeChild
+      VB: ContainersRefType.ContainersRefTypeChild
+    qualifiedName:
+      CSharp: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild
+      VB: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild
+    type: Class
+    assemblies:
+    - BaseClassForTestClass1
+    namespace: Microsoft.DevDiv
+    source:
+      remote:
+        path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+      id: ContainersRefTypeChild
+      path: src/SampleClass1/BaseClass/BaseClass.cs
+      startLine: 79
+    syntax:
+      content:
+        CSharp: public class ContainersRefTypeChild
+        VB: Public Class ContainersRefTypeChild
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+  - id: Microsoft.DevDiv.ExplicitLayoutClass
+    commentId: T:Microsoft.DevDiv.ExplicitLayoutClass
+    language: CSharp
+    name:
+      CSharp: ExplicitLayoutClass
+      VB: ExplicitLayoutClass
+    nameWithType:
+      CSharp: ExplicitLayoutClass
+      VB: ExplicitLayoutClass
+    qualifiedName:
+      CSharp: Microsoft.DevDiv.ExplicitLayoutClass
+      VB: Microsoft.DevDiv.ExplicitLayoutClass
+    type: Class
+    assemblies:
+    - BaseClassForTestClass1
+    namespace: Microsoft.DevDiv
+    source:
+      remote:
+        path: C:/Kiarash/Projects/UMODUL/Working/DocFx/docfx-seed-master/docfx-seed-master/src/SampleClass1/BaseClass/BaseClass.cs
+      id: ExplicitLayoutClass
+      path: src/SampleClass1/BaseClass/BaseClass.cs
+      startLine: 93
+    syntax:
+      content:
+        CSharp: public class ExplicitLayoutClass
+        VB: Public Class ExplicitLayoutClass
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.ValueType:
+    name:
+      CSharp:
+      - id: System.ValueType
+        name: ValueType
+        nameWithType: ValueType
+        qualifiedName: System.ValueType
+        isExternal: true
+      VB:
+      - id: System.ValueType
+        name: ValueType
+        nameWithType: ValueType
+        qualifiedName: System.ValueType
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.ValueType
+  System.ValueType.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.ValueType.Equals(System.Object)
+        name: Equals
+        nameWithType: ValueType.Equals
+        qualifiedName: System.ValueType.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ValueType.Equals(System.Object)
+        name: Equals
+        nameWithType: ValueType.Equals
+        qualifiedName: System.ValueType.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ValueType
+    commentId: M:System.ValueType.Equals(System.Object)
+  System.ValueType.GetHashCode:
+    name:
+      CSharp:
+      - id: System.ValueType.GetHashCode
+        name: GetHashCode
+        nameWithType: ValueType.GetHashCode
+        qualifiedName: System.ValueType.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ValueType.GetHashCode
+        name: GetHashCode
+        nameWithType: ValueType.GetHashCode
+        qualifiedName: System.ValueType.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ValueType
+    commentId: M:System.ValueType.GetHashCode
+  System.ValueType.ToString:
+    name:
+      CSharp:
+      - id: System.ValueType.ToString
+        name: ToString
+        nameWithType: ValueType.ToString
+        qualifiedName: System.ValueType.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ValueType.ToString
+        name: ToString
+        nameWithType: ValueType.ToString
+        qualifiedName: System.ValueType.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ValueType
+    commentId: M:System.ValueType.ToString
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Int64:
+    name:
+      CSharp:
+      - id: System.Int64
+        name: Int64
+        nameWithType: Int64
+        qualifiedName: System.Int64
+        isExternal: true
+      VB:
+      - id: System.Int64
+        name: Int64
+        nameWithType: Int64
+        qualifiedName: System.Int64
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int64
+  Microsoft.DevDiv.ContainersRefType.GetColorCount*:
+    name:
+      CSharp:
+      - id: Microsoft.DevDiv.ContainersRefType.GetColorCount*
+        name: GetColorCount
+        nameWithType: ContainersRefType.GetColorCount
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.GetColorCount
+      VB:
+      - id: Microsoft.DevDiv.ContainersRefType.GetColorCount*
+        name: GetColorCount
+        nameWithType: ContainersRefType.GetColorCount
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.GetColorCount
+    isDefinition: true
+    commentId: Overload:Microsoft.DevDiv.ContainersRefType.GetColorCount
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  System.Object[]:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: '[]'
+        nameWithType: '[]'
+        qualifiedName: '[]'
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ()
+        nameWithType: ()
+        qualifiedName: ()
+    isDefinition: false
+  Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod*:
+    name:
+      CSharp:
+      - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod*
+        name: ContainersRefTypeNonRefMethod
+        nameWithType: ContainersRefType.ContainersRefTypeNonRefMethod
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod
+      VB:
+      - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod*
+        name: ContainersRefTypeNonRefMethod
+        nameWithType: ContainersRefType.ContainersRefTypeNonRefMethod
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod
+    isDefinition: true
+    commentId: Overload:Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod
+  System.EventHandler:
+    name:
+      CSharp:
+      - id: System.EventHandler
+        name: EventHandler
+        nameWithType: EventHandler
+        qualifiedName: System.EventHandler
+        isExternal: true
+      VB:
+      - id: System.EventHandler
+        name: EventHandler
+        nameWithType: EventHandler
+        qualifiedName: System.EventHandler
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.EventHandler
+  Microsoft.DevDiv.ContainersRefType:
+    name:
+      CSharp:
+      - id: Microsoft.DevDiv.ContainersRefType
+        name: ContainersRefType
+        nameWithType: ContainersRefType
+        qualifiedName: Microsoft.DevDiv.ContainersRefType
+      VB:
+      - id: Microsoft.DevDiv.ContainersRefType
+        name: ContainersRefType
+        nameWithType: ContainersRefType
+        qualifiedName: Microsoft.DevDiv.ContainersRefType
+    isDefinition: true
+    commentId: T:Microsoft.DevDiv.ContainersRefType
+  Microsoft.DevDiv:
+    name:
+      CSharp:
+      - name: Microsoft.DevDiv
+        nameWithType: Microsoft.DevDiv
+        qualifiedName: Microsoft.DevDiv
+      VB:
+      - name: Microsoft.DevDiv
+        nameWithType: Microsoft.DevDiv
+        qualifiedName: Microsoft.DevDiv
+    isDefinition: true
+    commentId: N:Microsoft.DevDiv
+  Microsoft.DevDiv.ContainersRefType.ColorType:
+    name:
+      CSharp:
+      - id: Microsoft.DevDiv.ContainersRefType.ColorType
+        name: ContainersRefType.ColorType
+        nameWithType: ContainersRefType.ColorType
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.ColorType
+      VB:
+      - id: Microsoft.DevDiv.ContainersRefType.ColorType
+        name: ContainersRefType.ColorType
+        nameWithType: ContainersRefType.ColorType
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.ColorType
+    isDefinition: true
+    parent: Microsoft.DevDiv
+    commentId: T:Microsoft.DevDiv.ContainersRefType.ColorType
+  Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate:
+    name:
+      CSharp:
+      - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate
+        name: ContainersRefType.ContainersRefTypeDelegate
+        nameWithType: ContainersRefType.ContainersRefTypeDelegate
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate
+      VB:
+      - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate
+        name: ContainersRefType.ContainersRefTypeDelegate
+        nameWithType: ContainersRefType.ContainersRefTypeDelegate
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate
+    isDefinition: true
+    commentId: T:Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate
+  Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface:
+    name:
+      CSharp:
+      - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+        name: ContainersRefType.ContainersRefTypeChildInterface
+        nameWithType: ContainersRefType.ContainersRefTypeChildInterface
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+      VB:
+      - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+        name: ContainersRefType.ContainersRefTypeChildInterface
+        nameWithType: ContainersRefType.ContainersRefTypeChildInterface
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+    isDefinition: true
+    commentId: T:Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild:
+    name:
+      CSharp:
+      - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild
+        name: ContainersRefType.ContainersRefTypeChild
+        nameWithType: ContainersRefType.ContainersRefTypeChild
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild
+      VB:
+      - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild
+        name: ContainersRefType.ContainersRefTypeChild
+        nameWithType: ContainersRefType.ContainersRefTypeChild
+        qualifiedName: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild
+    isDefinition: true
+    commentId: T:Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild
+  Microsoft.DevDiv.ExplicitLayoutClass:
+    name:
+      CSharp:
+      - id: Microsoft.DevDiv.ExplicitLayoutClass
+        name: ExplicitLayoutClass
+        nameWithType: ExplicitLayoutClass
+        qualifiedName: Microsoft.DevDiv.ExplicitLayoutClass
+      VB:
+      - id: Microsoft.DevDiv.ExplicitLayoutClass
+        name: ExplicitLayoutClass
+        nameWithType: ExplicitLayoutClass
+        qualifiedName: Microsoft.DevDiv.ExplicitLayoutClass
+    isDefinition: true
+    commentId: T:Microsoft.DevDiv.ExplicitLayoutClass
