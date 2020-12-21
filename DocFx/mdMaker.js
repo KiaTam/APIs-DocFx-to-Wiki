@@ -81,6 +81,6 @@ for(i=0;i<iD[0].length; i++)
 }
 
 //var outputFilePath ='Documentation/sample.md';
-fs.writeFile('Documentation/_Sidebar.md', outputTitle, function (err) {
+fs.writeFile('DocFx/_Sidebar.md', outputTitle, function (err) {
   if (err) return console.log(err);
 });
