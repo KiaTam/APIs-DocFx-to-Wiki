@@ -71,7 +71,7 @@ for(i=0;i<iD[0].length; i++)
 		//Subtitle title
 		outputTitle0 = iD[1][i];
 		outputTitle0 = outputTitle0.replace('.html', '');
-		outputTitle1 = '  * ['.concat(outputTitle0, '](https://github.com/KiaTam/TestWiki/wiki/Usage%3A-');
+		outputTitle1 = '  * ['.concat(outputTitle0, '](https://github.com/KiaTam/TestWiki/wiki/');
 		//outputTitle0 = outputTitle0.concat('](https://github.com/adriantanasa/github-wiki-sidebar/wiki/Usage%3A-');
 		outputTitle1 = outputTitle1.concat(outputTitle0, ')');
 	}
