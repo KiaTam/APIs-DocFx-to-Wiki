@@ -64,7 +64,7 @@ for(i=0;i<iD[0].length; i++)
 {
 	var outputTitle0 = '';
 	var outputTitle1 = '';
-	var outputTitleMain = '';
+	var outputTitleMain;
 	
 	if(iD[0][i] == 'expand-stub')
 	{
@@ -72,6 +72,7 @@ for(i=0;i<iD[0].length; i++)
 		outputTitle0 = iD[1][i];
 		outputTitle0 = outputTitle0.replace('.html', '');
 		outputTitleMain = outputTitle0;
+		outputTitleMain = outputTitleMain.concat('.');
 		outputTitle1 = '* ['.concat(outputTitle0, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 		outputTitle1= outputTitle1.concat(outputTitle0, ')');
 	}else 
@@ -79,7 +80,8 @@ for(i=0;i<iD[0].length; i++)
 		//text of Sub menue of side-bar
 		outputTitle0 = iD[1][i];
 		outputTitle0 = outputTitle0.replace('.html', '');
-		outputTitle0 = outputTitle0.replace(outputTitleMain, '');
+		outputTitle0 = outputTitle0.replace(outputTitleMain, '');//'Volkswagen.Unity.Framework.', '');
+		console.log('2', outputTitle0);
 		outputTitle1 = '  * ['.concat(outputTitle0 , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 		outputTitle1 = outputTitle1.concat(outputTitle0, ')');
 	}
