@@ -61,7 +61,7 @@ for(i=0;i<iD[1].length; i++)
 
 // Sorts and writes titles and sub-titles of Wiki-sidebar to the _Sidebar.md.
 // Writes the result in the _sidebar.md which is used on for the side-bar of Wiki.  
-var outputTitle = '';
+var sidebarTitles = '';
 for(i=0;i<iD[0].length; i++)
 {
 
