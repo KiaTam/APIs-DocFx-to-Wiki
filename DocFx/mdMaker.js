@@ -68,8 +68,8 @@ for(i=0;i<iD[0].length; i++)
 		//text of Sub menue of side-bar
 		outputTitle0 = iD[1][i];
 		outputTitle0 = outputTitle0.replace('.html', '');
-		outputTitle0 = outputTitle0.replace(outputTitleMain, '');
-		outputTitle1 = '  * ['.concat(outputTitle0, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
+		//outputTitle0 = outputTitle0.replace(outputTitleMain, '');
+		outputTitle1 = '  * ['.concat(outputTitle0.replace(outputTitleMain, '');, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 		outputTitle1 = outputTitle1.concat(outputTitle0, ')');
 	}
 	
