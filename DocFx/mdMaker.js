@@ -86,7 +86,6 @@ for(i=0;i<iD[0].length; i++)
 	}
 	
 	outputTitle = outputTitle.concat(outputTitle1,'\r\n')
-	
 }
 
 //_Sidebar.md is pushed to GitHub-Wiki by github-wiki-publish-action
