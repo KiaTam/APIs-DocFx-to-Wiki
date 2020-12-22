@@ -5,8 +5,9 @@
 # 2. Runs mdMaker.js to convert and export the generated documentation to Wiki-flavoured Markdown files.
 # 3. Publish the generated Markdown files to GitHub-Wiki. (_Sidebar.md contains titles of the side bar menue)
 
-name: DocFx
+name: DocFx_to_Github_Wiki
 
+# Defines the Events that trigger the workflow
 on: [pull_request, workflow_dispatch]
 
 jobs:
@@ -16,20 +17,20 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     
-    # Run DocFx to generate API documentation
+    # Runs DocFx to generate API documentation
     - uses: nikeee/docfx-action@v1.0.0
       name: Build Documentation
       with:
         args: DocFx/docfx.json
     
-    # Convert and export HTML documentation files to Markdown
+    # Converts and export HTML documentation files to Markdown
     - run: cd DocFx/_site
     - run: npm install cheerio
     - run: npm install turndown 
     - run: npm install turndown-plugin-gfm
     - run: node DocFx/mdMaker.js
     
-    # Publish to Github-Wiki
+    # Publishes to Github-Wiki
     - uses: SwiftDocOrg/github-wiki-publish-action@v1
       with:
         path: "DocFx"
