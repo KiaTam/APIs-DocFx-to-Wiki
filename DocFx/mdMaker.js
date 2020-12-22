@@ -1,8 +1,10 @@
 const fs=require('fs');
 const cheerio = require('cheerio');//Used for crawling in HTML files
 
+var docFxPath = 'DocFx';
 // Load toc.html to be analysed (crawled) by Cheerio
-var inputFilePath ='DocFx/_site/api/toc.html';
+//var inputFilePath ='DocFx/_site/api/toc.html';
+var inputFilePath =docFxPath.concat('/_site/api/toc.html');
 var tocData = fs.readFileSync(inputFilePath, 'utf8');
 const $ = cheerio.load(tocData);
 
@@ -30,7 +32,7 @@ var gfm = turndownPluginGfm.gfm
 var turndownService = new TurndownService()
 turndownService.use(gfm)
 
-var localPath = 'DocFx/_site/api/'
+var localPath = docFxPath.concat('/_site/api/');
 for(i=0;i<iD[1].length; i++)
 {
    inputFilePath = localPath.concat(iD[1][i])
