@@ -4,9 +4,14 @@
       "src": [
         {
 		  "src": "../../",
-          "files": [ "**/*.csproj" ],
-          "exclude": [ "**/bin/**", "**/obj/**" ],
-          
+          "files": [
+            "**/**.cs"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "**/_site/**"
+          ]
         }
       ],
       "dest": "api"
@@ -15,30 +20,37 @@
   "build": {
     "content": [
       {
-          "files": ["api/**.yml",
-          "api/index.md" ]
+        "files": [
+          "api/**.yml"
+        ]
       },
       {
-	   "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
+        "files": [
           "toc.yml",
           "*.md"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site/**"
         ]
       }
     ],
-    "resource": [
+    "overwrite": [
       {
-        "files": [ "articles/images/**"]
+        "files": [
+		  "api/**.yml"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site/**"
+        ]
       }
     ],
-    "overwrite": "specs/*.md",
-    "globalMetadata": {
-      "_appTitle": "docfx seed website",
-      "_enableSearch": true
-    },
-    "markdownEngineName": "markdig",
     "dest": "_site",
-    "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
+    "template": [
+      "default"
+    ]
   }
 }
