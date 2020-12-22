@@ -81,6 +81,7 @@ for(i=0;i<iD[0].length; i++)
 }
 
 //_Sidebar.md is pushed to GitHub-Wiki by github-wiki-publish-action
-fs.writeFile('DocFx/_Sidebar.md', outputTitle, function (err) {
+var outputFilePath = docFxPath.concat('/_Sidebar.md');
+fs.writeFile(outputFilePath, outputTitle, function (err) {
   if (err) return console.log(err);
 });
