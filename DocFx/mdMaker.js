@@ -17,7 +17,7 @@ var inputFilePath =docFxPath.concat('/_site/api/toc.html');
 var tocData = fs.readFileSync(inputFilePath, 'utf8');
 const $ = cheerio.load(tocData);
 
-// Crawling in the loaded data from toc.HTML: Read and sort name of HTML files
+// Crawling in the loaded data from toc.HTML to extract the name of HTML files
 const iD = [[],[]];
 $("li").each(function(i,element){
 		
@@ -58,7 +58,7 @@ for(i=0;i<iD[1].length; i++)
    });
 }
 
-// Writing titles and sub-titles of Wiki-sidebar to the _Sidebar.md
+// Sorting and riting titles and sub-titles of Wiki-sidebar to the _Sidebar.md
 var outputTitle = '';
 for(i=0;i<iD[0].length; i++)
 {
@@ -88,7 +88,8 @@ for(i=0;i<iD[0].length; i++)
 	outputTitle = outputTitle.concat(outputTitle1,'\r\n')
 }
 
-//_Sidebar.md is pushed to GitHub-Wiki by github-wiki-publish-action
+// Writes the file _Sidebar.md.
+// Hint: The file _Sidebar.md is pushed to GitHub-Wiki by in the GitHub workflow by github-wiki-publish-action
 var outputFilePath = docFxPath.concat('/_Sidebar.md');
 fs.writeFile(outputFilePath, outputTitle, function (err) {
   if (err) return console.log(err);
