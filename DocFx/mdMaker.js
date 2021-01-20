@@ -62,7 +62,11 @@ for(i=0;i<iD[1].length; i++)
 {
    inputFilePath = localPath.concat(iD[1][i])
    var  htmlContent= fs.readFileSync(inputFilePath, 'utf8');
-
+	   
+   // convert HTML text to MD
+   var markdownContent = turndownService.turndown(htmlContent);
+	
+   // delete '.html' from the links in order to be used by GitHub-Wiki
    const $ = cheerio.load(htmlContent);
    const hrefs = [];
    $('div').each(function(i, element) {
@@ -70,19 +74,14 @@ for(i=0;i<iD[1].length; i++)
 	.find('a')
 	.attr('href');
    });
-	   
-   // convert HTML text to MD
-   var markdownContent = turndownService.turndown(htmlContent);
 	
    for(j=0;j<hrefs.length; j++)
    {
          markdownContent = markdownContent.replace('.html', '');
    }
-	
-   //markdownContent = markdownContent.replace('.html', '');
-   //markdownContent = markdownContent.replace('.html', '');
-   //markdownContent = markdownContent.replace('.html', '');
 
+	
+   // save the modified MD file	
    var outputFilePath = iD[1][i];
    outputFilePath = outputFilePath.replace('.html', '.md');
    outputFilePath ='DocFx/'.concat(outputFilePath);
