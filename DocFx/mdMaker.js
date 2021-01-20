@@ -26,7 +26,7 @@ $("li").each(function(i,element){
 	.attr('class');
 	
 	
-	iD[1][i]erwrwe = $(element)
+	iD[1][i] = $(element)
 	.find('a')
 	.attr('href');	
 });
