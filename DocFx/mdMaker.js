@@ -63,7 +63,7 @@ for(i=0;i<iD[1].length; i++)
 
    const $ = cheerio.load(htmlContent);
    $('a').each(function () {
-	   $(this)..replace('.html', '');
+	   $(this).replace('.html', '');
    });
 	   
    // convert HTML text to MD
