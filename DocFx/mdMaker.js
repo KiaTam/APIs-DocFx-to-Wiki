@@ -61,13 +61,14 @@ for(i=0;i<iD[1].length; i++)
    inputFilePath = localPath.concat(iD[1][i])
    var  htmlContent= fs.readFileSync(inputFilePath, 'utf8');
 
+   const $ = cheerio.load(htmlContent);
+   $('a').each(function () {
+	   $(this)..replace('.html', '');
+   });
+	   
    // convert HTML text to MD
    var markdownContent = turndownService.turndown(htmlContent);
-  
-   htmlContent.each(function(i,element){
-	   
-        markdownContent = markdownContent.replace('.html', '');
-   });
+	
    //markdownContent = markdownContent.replace('.html', '');
    //markdownContent = markdownContent.replace('.html', '');
    //markdownContent = markdownContent.replace('.html', '');
