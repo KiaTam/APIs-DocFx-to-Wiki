@@ -64,10 +64,13 @@ for(i=0;i<iD[1].length; i++)
    // convert HTML text to MD
    var markdownContent = turndownService.turndown(htmlContent);
   
-   markdownContent = markdownContent.replace('.html', '');
-   markdownContent = markdownContent.replace('.html', '');
-   markdownContent = markdownContent.replace('.html', '');
-   markdownContent = markdownContent.replace('.html', '');
+   htmlContent.each(function(i,element){
+	   
+        markdownContent = markdownContent.replace('.html', '');
+   }
+   //markdownContent = markdownContent.replace('.html', '');
+   //markdownContent = markdownContent.replace('.html', '');
+   //markdownContent = markdownContent.replace('.html', '');
 
    var outputFilePath = iD[1][i];
    outputFilePath = outputFilePath.replace('.html', '.md');
