@@ -72,7 +72,7 @@ for(i=0;i<iD[1].length; i++)
    });
 	   
    // convert HTML text to MD
-   for(i=0;i<hrefs.length; i++)
+   for(j=0;j<hrefs.length; j++)
    {
           var markdownContent = turndownService.turndown(htmlContent);
    }
