@@ -67,7 +67,7 @@ for(i=0;i<iD[1].length; i++)
 	.find('a')
 	.attr('href');
 	   
-	return $(this).attr('href', href.replace('.html', ''));
+	return $(element).attr('href', href.replace('.html', ''));
    });
 	   
    // convert HTML text to MD
