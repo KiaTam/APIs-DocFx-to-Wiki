@@ -19,7 +19,7 @@ const $ = cheerio.load(tocData);
 
 // Crawling in the loaded data from toc.HTML to extract the name of HTML files
 const iD = [[],[]];
-$("li").each(function(i,element)){
+$("li").each(function(i,element){
 		
 	iD[0][i] = $(element)
 	.find('span')
@@ -64,10 +64,10 @@ for(i=0;i<iD[1].length; i++)
    // convert HTML text to MD
    var markdownContent = turndownService.turndown(htmlContent);
   
-   htmlContent.each(function(i,element)){
+   htmlContent.each(function(i,element){
 	   
         markdownContent = markdownContent.replace('.html', '');
-   }
+   });
    //markdownContent = markdownContent.replace('.html', '');
    //markdownContent = markdownContent.replace('.html', '');
    //markdownContent = markdownContent.replace('.html', '');
