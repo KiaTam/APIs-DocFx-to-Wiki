@@ -79,6 +79,8 @@ for(i=0;i<iD[1].length; i++)
    {
          markdownContent = markdownContent.replace('.html', '');
    }
+	
+   markdownContent = markdownContent.replace('Show / Hide Table of Contents', '');
 
 	
    // save the modified MD file	
