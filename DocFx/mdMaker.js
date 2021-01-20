@@ -56,18 +56,19 @@ turndownService.use(tables)
 
 // Reads the HTML files and converts them to Markdown and stores them.
 var localPath = docFxPath.concat('/_site/api/');
+
+
 for(i=0;i<iD[1].length; i++)
 {
    inputFilePath = localPath.concat(iD[1][i])
    var  htmlContent= fs.readFileSync(inputFilePath, 'utf8');
 
    const $ = cheerio.load(htmlContent);
-   $('li').each(function(element) {
-	 const href = $(element)
+   const hrefs = [];
+   $('h4').each(function(i, element) {
+	 hrefs [i] = $(element)
 	.find('a')
 	.attr('href');
-	   
-	return $(element).attr('href', href.replace('.html', ''));
    });
 	   
    // convert HTML text to MD
