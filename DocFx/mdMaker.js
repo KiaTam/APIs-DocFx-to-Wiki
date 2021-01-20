@@ -62,8 +62,12 @@ for(i=0;i<iD[1].length; i++)
    var  htmlContent= fs.readFileSync(inputFilePath, 'utf8');
 
    const $ = cheerio.load(htmlContent);
-   $('a').each(function () {
-	   $(this).replace('.html', '');
+   $('li').each(function(element) {
+	 const href = $(element)
+	.find('a')
+	.attr('href');
+	   
+	return $(this).attr('href', href.replace('.html', ''));
    });
 	   
    // convert HTML text to MD
