@@ -65,7 +65,7 @@ for(i=0;i<iD[1].length; i++)
 
    const $ = cheerio.load(htmlContent);
    const hrefs = [];
-   $('h4').each(function(i, element) {
+   $('div').each(function(i, element) {
 	 hrefs [i] = $(element)
 	.find('a')
 	.attr('href');
