@@ -49,9 +49,10 @@ var strikethrough = turndownPluginGfm.strikethrough
 
 // Use the gfm plugin
 turndownService.use(gfm)
+turndownService.use(tables)
 
 // Use the table and strikethrough plugins only
-turndownService.use([tables, strikethrough])
+//turndownService.use([tables, strikethrough])
 
 // Reads the HTML files and converts them to Markdown and stores them.
 var localPath = docFxPath.concat('/_site/api/');
