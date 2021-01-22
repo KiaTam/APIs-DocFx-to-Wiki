@@ -87,7 +87,8 @@ for(i=0;i<iD[1].length; i++)
    
    if ( matches != null)
    {
-     for(j=0;j<((matches.length)/2); j++)
+      
+     for(j=0;j<(((matches.length)/2) + 1); j++)
      {
        markdownContent = markdownContent.replace('|\n' , '|');//one for each line
        markdownContent = markdownContent.replace('| \n' , '|');
@@ -101,14 +102,14 @@ for(i=0;i<iD[1].length; i++)
        markdownContent = markdownContent.replace('|\n' , '|');
        markdownContent = markdownContent.replace('| \n' , '|');
      }
-     for(j=0;j<((matches.length)/2); j++)
+     for(j=0;j<(((matches.length)/2) + 1); j++)
      {
        markdownContent = markdownContent.replace('\n\n |' , '|');//one for each line
        markdownContent = markdownContent.replace('\n\n |' , '|');
        markdownContent = markdownContent.replace('\n\n |' , '|');
        markdownContent = markdownContent.replace('\n\n |' , '|');//one for each line
      }
-     for(j=0;j<((matches.length)/2); j++)
+     for(j=0;j<(((matches.length)/2) + 1); j++)
      {
        markdownContent = markdownContent.replace('||' ,'|\n|');
        markdownContent = markdownContent.replace('||' ,'|\n|');
