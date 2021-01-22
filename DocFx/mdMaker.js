@@ -82,6 +82,40 @@ for(i=0;i<iD[1].length; i++)
 	
    markdownContent = markdownContent.replace('Show / Hide Table of Contents', '');
 
+   // Fix the problem regarding syntax of tables
+   var matches = markdownContent.match(/---/g);
+   
+   if ( matches != null)
+   {
+     for(j=0;j<((matches.length)/2); j++)
+     {
+       markdownContent = markdownContent.replace('|\n' , '|');//one for each line
+       markdownContent = markdownContent.replace('| \n' , '|');
+   
+       markdownContent = markdownContent.replace('|\n' , '|');
+       markdownContent = markdownContent.replace('| \n' , '|');
+   
+       markdownContent = markdownContent.replace('|\n' , '|');
+       markdownContent = markdownContent.replace('| \n' , '|');
+   
+       markdownContent = markdownContent.replace('|\n' , '|');
+       markdownContent = markdownContent.replace('| \n' , '|');
+	 }
+	 for(j=0;j<((result.length)/2); j++)
+     {
+       markdownContent = markdownContent.replace('\n\n |' , '|');//one for each line
+       markdownContent = markdownContent.replace('\n\n |' , '|');
+       markdownContent = markdownContent.replace('\n\n |' , '|');
+       markdownContent = markdownContent.replace('\n\n |' , '|');//one for each line
+	 }
+	 for(j=0;j<((result.length)/2); j++)
+     {
+       markdownContent = markdownContent.replace('||' ,'|\n|');
+       markdownContent = markdownContent.replace('||' ,'|\n|');
+       markdownContent = markdownContent.replace('||' ,'|\n|');
+       markdownContent = markdownContent.replace('||' ,'|\n|');
+	 }
+   }
 	
    // save the modified MD file	
    var outputFilePath = iD[1][i];
