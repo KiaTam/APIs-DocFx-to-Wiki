@@ -167,3 +167,23 @@ var outputFilePath = docFxPath.concat('/_Sidebar.md');
 fs.writeFile(outputFilePath, sidebarTitles, function (err) {
   if (err) return console.log(err);
 });
+
+
+// write Developer documentations
+var ncp = require('ncp').ncp;
+
+ncp.limit = 16;
+var source = 'src';
+
+var destination = 'DocFx';
+
+console.log(source);
+ncp(source, destination, function (err) {
+ if (err) {
+   return console.error(err);
+ }
+ console.log('done!');
+});
+
+
+
