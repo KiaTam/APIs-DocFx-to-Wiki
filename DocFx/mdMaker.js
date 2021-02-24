@@ -191,8 +191,8 @@ for(i=0;i<files.length; i++)
 	sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
 	console.log('came here');
 	console.log(sidebarTitles);        
-  });
-});
+  
+};
 console.log('\r\n dev');
 console.log(sidebarTitles);
 
