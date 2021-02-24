@@ -183,7 +183,7 @@ for(i=0;i<files.length; i++)
     	//text of Sub menue of side-bar
 	sidebarTitle0 = files;
 	sidebarTitle0 = sidebarTitle0.replace('.md', '');
-	shortens text of sub-menue by skipping the long beginning of it. e.g. skipps Volkswagen.Unity.Framework.Core. on the sub-menue
+	// shortens text of sub-menue by skipping the long beginning of it. e.g. skipps Volkswagen.Unity.Framework.Core. on the sub-menue
 	var sidebarTitleTmp = sidebarTitle0.replace(sidebarTitleMain, '');
 		
 	sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
