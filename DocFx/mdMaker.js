@@ -86,7 +86,7 @@ sidebarTitleMain = sidebarTitle0;
 sidebarTitleMain = sidebarTitleMain.concat('.');
 sidebarTitle1 = '* ['.concat(sidebarTitle0, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
-sidebarTitles = sidebarTitles.concat('* [Development Documentations]','\r\n');
+//sidebarTitles = sidebarTitles.concat('* [Development Documentations]','\r\n');
 
 const testFolder = 'src';
 fs.readdir(testFolder, (err, files) => {
