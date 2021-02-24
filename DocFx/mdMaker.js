@@ -173,7 +173,6 @@ for(i=0;i<iD[0].length; i++)
 		sidebarTitles = sidebarTitles.concat('Development Documentations');
 
 const testFolder = '../Documentation/Development';
-const fs = require('fs');
 
 fs.readdir(testFolder, (err, files) => {
   files.forEach(file => {
