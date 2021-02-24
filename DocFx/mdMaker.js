@@ -188,6 +188,8 @@ fs.readdir(testFolder, (err, files) => {
 		sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 		sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
 	  	sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
+	  	console.log('came here');
+	  	console.log(file);
 	        
   });
 });
