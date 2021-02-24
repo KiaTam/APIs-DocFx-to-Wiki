@@ -158,7 +158,7 @@ for(i=0;i<iD[0].length; i++)
 		sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
 	}
 	
-	sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n')
+	sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
 }
 
 		//text of Main menue of side-bar
@@ -184,6 +184,7 @@ fs.readdir(testFolder, (err, files) => {
 		
 		sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 		sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
+	  	sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
   });
 });
 
