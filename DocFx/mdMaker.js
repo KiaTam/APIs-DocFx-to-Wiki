@@ -172,7 +172,7 @@ for(i=0;i<iD[0].length; i++)
 		sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
 		sidebarTitles = sidebarTitles.concat('Development Documentations');
 
-const testFolder = '../src';
+const testFolder = '../src/';
 
 fs.readdir(testFolder, (err, files) => {
   files.forEach(file => {
