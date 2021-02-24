@@ -170,7 +170,23 @@ for(i=0;i<iD[0].length; i++)
 		sidebarTitleMain = sidebarTitleMain.concat('.');
 		sidebarTitle1 = '* ['.concat(sidebarTitle0, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 		sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
-		sidebarTitles = 'Development Documentations';
+		sidebarTitles = sidebarTitles.concat('Development Documentations');
+
+const testFolder = '../Documentation/Development';
+const fs = require('fs');
+
+fs.readdir(testFolder, (err, files) => {
+  files.forEach(file => {
+    		//text of Sub menue of side-bar
+		sidebarTitle0 = file;
+		sidebarTitle0 = sidebarTitle0.replace('.md', '');
+		//shortens text of sub-menue by skipping the long beginning of it. e.g. skipps Volkswagen.Unity.Framework.Core. on the sub-menue
+		var sidebarTitleTmp = sidebarTitle0.replace(sidebarTitleMain, '');
+		
+		sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
+		sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
+  });
+});
 // sidebarTitles.concat(sidebarTitle1,'\r\n')
 
 // Writes the sidebarTitles to _Sidebar.md.
