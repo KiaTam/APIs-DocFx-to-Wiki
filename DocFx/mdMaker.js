@@ -188,8 +188,8 @@ fs.readdir(testFolder, (err, files) => {
 	//sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 	//sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
 	//sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
-	//console.log('came here');
-	//console.log(sidebarTitles);        
+	console.log('came here');
+	console.log(sidebarTitles);        
   });
 });
 console.log('\r\n dev');
@@ -216,10 +216,10 @@ ncp(source, destination, function (err) {
 
 // Writes the sidebarTitles to _Sidebar.md.
 // Hint: The file _Sidebar.md is pushed to GitHub-Wiki by in the GitHub workflow by github-wiki-publish-action
-var outputFilePath = docFxPath.concat('/_Sidebar.md');
-fs.writeFile(outputFilePath, sidebarTitles, function (err) {
-  if (err) return console.log(err);
-});
+//var outputFilePath = docFxPath.concat('/_Sidebar.md');
+//fs.writeFile(outputFilePath, sidebarTitles, function (err) {
+//  if (err) return console.log(err);
+//});
 
 console.log('after');
 console.log(sidebarTitles);
