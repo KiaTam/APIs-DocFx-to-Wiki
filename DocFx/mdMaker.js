@@ -170,7 +170,8 @@ for(i=0;i<iD[0].length; i++)
 		sidebarTitleMain = sidebarTitleMain.concat('.');
 		sidebarTitle1 = '* ['.concat(sidebarTitle0, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 		sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
-		sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n')
+		sidebarTitles = 'Development Documentations';
+// sidebarTitles.concat(sidebarTitle1,'\r\n')
 
 // Writes the sidebarTitles to _Sidebar.md.
 // Hint: The file _Sidebar.md is pushed to GitHub-Wiki by in the GitHub workflow by github-wiki-publish-action
