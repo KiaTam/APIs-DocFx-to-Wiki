@@ -189,12 +189,12 @@ fs.readdir(testFolder, (err, files) => {
 		sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
 	  	sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
 	  	console.log('came here');
-	  	console.log(file);
+	  	console.log(sidebarTitles);
 	        
   });
 });
-console.log('\r\n dev');
-console.log(sidebarTitles);
+//console.log('\r\n dev');
+//console.log(sidebarTitles);
 
 // sidebarTitles.concat(sidebarTitle1,'\r\n')
 
