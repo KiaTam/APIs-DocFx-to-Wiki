@@ -193,17 +193,8 @@ fs.readdir(testFolder, (err, files) => {
 	        
   });
 });
-//console.log('\r\n dev');
-//console.log(sidebarTitles);
-
-// sidebarTitles.concat(sidebarTitle1,'\r\n')
-
-// Writes the sidebarTitles to _Sidebar.md.
-// Hint: The file _Sidebar.md is pushed to GitHub-Wiki by in the GitHub workflow by github-wiki-publish-action
-var outputFilePath = docFxPath.concat('/_Sidebar.md');
-fs.writeFile(outputFilePath, sidebarTitles, function (err) {
-  if (err) return console.log(err);
-});
+console.log('\r\n dev');
+console.log(sidebarTitles);
 
 
 // write Developer documentations
@@ -221,6 +212,19 @@ ncp(source, destination, function (err) {
  }
  console.log('done!');
 });
+
+// sidebarTitles.concat(sidebarTitle1,'\r\n')
+
+// Writes the sidebarTitles to _Sidebar.md.
+// Hint: The file _Sidebar.md is pushed to GitHub-Wiki by in the GitHub workflow by github-wiki-publish-action
+var outputFilePath = docFxPath.concat('/_Sidebar.md');
+fs.writeFile(outputFilePath, sidebarTitles, function (err) {
+  if (err) return console.log(err);
+});
+
+console.log('after');
+console.log(sidebarTitles);
+
 
 
 
