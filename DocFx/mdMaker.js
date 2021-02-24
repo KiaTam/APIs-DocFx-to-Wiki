@@ -100,12 +100,13 @@ fs.readdir(testFolder, (err, files) => {
 	//sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 	//sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
 	//sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
+	testFolder = 'folder';
 	console.log('came here');
 	console.log(sidebarTitles);        
   });
 });
 console.log('\r\n dev');
-console.log(sidebarTitles);
+console.log(testFolder);
 
 	
    for(j=0;j<hrefs.length; j++)
