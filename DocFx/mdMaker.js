@@ -161,7 +161,7 @@ for(i=0;i<iD[0].length; i++)
 	sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
 	
 }
-console.log('\r\n main`);
+console.log('\r\n main');
 console.log(sidebarTitles);
 
 		//text of Main menue of side-bar
@@ -191,7 +191,7 @@ fs.readdir(testFolder, (err, files) => {
 	        
   });
 });
-console.log('\r\n dev`);
+console.log('\r\n dev');
 console.log(sidebarTitles);
 
 // sidebarTitles.concat(sidebarTitle1,'\r\n')
