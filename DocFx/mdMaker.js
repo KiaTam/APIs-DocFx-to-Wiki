@@ -88,7 +88,7 @@ sidebarTitle1 = '* ['.concat(sidebarTitle0, '](https://github.com/KiaTam/APIs-Do
 sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
 //sidebarTitles = sidebarTitles.concat('* [Development Documentations]','\r\n');
 
-const testFolder = 'src';
+var testFolder = 'src';
 fs.readdir(testFolder, (err, files) => {
   files.forEach(file => {
     	//text of Sub menue of side-bar
