@@ -57,6 +57,39 @@ turndownService.use(tables)
 // Reads the HTML files and converts them to Markdown and stores them.
 var localPath = docFxPath.concat('/_site/api/');
 
+//text of Main menue of side-bar
+var sidebarTitle0 = '';
+var sidebarTitle1 = '';
+var sidebarTitleMain;
+sidebarTitle0 = 'Development Documentations';
+sidebarTitleMain = sidebarTitle0;
+sidebarTitleMain = sidebarTitleMain.concat('.');
+sidebarTitle1 = '* ['.concat(sidebarTitle0, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
+sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
+//sidebarTitles = sidebarTitles.concat('* [Development Documentations]','\r\n');
+
+var testFolder = 'src';
+var tst = 'tst'
+fs.readdir(testFolder, (err, files) => {
+  files.forEach(file => {
+    	//text of Sub menue of side-bar
+	//sidebarTitle0 = file;
+	//sidebarTitle0 = sidebarTitle0.replace('.md', '');
+	//shortens text of sub-menue by skipping the long beginning of it. e.g. skipps Volkswagen.Unity.Framework.Core. on the sub-menue
+	//var sidebarTitleTmp = sidebarTitle0.replace(sidebarTitleMain, '');
+		
+	//sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
+	//sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
+	//sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
+	tst = 'tst2';
+	console.log('came here');
+	console.log(sidebarTitles);        
+  });
+});
+console.log('\r\n dev');
+console.log(tst);
+
+
 
 for(i=0;i<iD[1].length; i++)
 {
@@ -75,38 +108,6 @@ for(i=0;i<iD[1].length; i++)
 	.attr('href');
    });
 
-	
-
-//text of Main menue of side-bar
-var sidebarTitle0 = '';
-var sidebarTitle1 = '';
-var sidebarTitleMain;
-sidebarTitle0 = 'Development Documentations';
-sidebarTitleMain = sidebarTitle0;
-sidebarTitleMain = sidebarTitleMain.concat('.');
-sidebarTitle1 = '* ['.concat(sidebarTitle0, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
-sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
-//sidebarTitles = sidebarTitles.concat('* [Development Documentations]','\r\n');
-
-var testFolder = 'src';
-fs.readdir(testFolder, (err, files) => {
-  files.forEach(file => {
-    	//text of Sub menue of side-bar
-	//sidebarTitle0 = file;
-	//sidebarTitle0 = sidebarTitle0.replace('.md', '');
-	//shortens text of sub-menue by skipping the long beginning of it. e.g. skipps Volkswagen.Unity.Framework.Core. on the sub-menue
-	//var sidebarTitleTmp = sidebarTitle0.replace(sidebarTitleMain, '');
-		
-	//sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
-	//sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
-	//sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
-	testFolder = 'folder';
-	console.log('came here');
-	console.log(sidebarTitles);        
-  });
-});
-console.log('\r\n dev');
-console.log(testFolder);
 
 	
    for(j=0;j<hrefs.length; j++)
