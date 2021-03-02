@@ -175,7 +175,7 @@ sidebarTitle1 = '* ['.concat(sidebarTitle0, '](https://github.com/KiaTam/APIs-Do
 sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
 sidebarTitles = sidebarTitles.concat('* Development Documentations','\r\n');
 
-var testFolder = '/Documentation/Development';
+var testFolder = '/Documentation/Development/';
 
 var files = fs.readdirSync(testFolder);
 
