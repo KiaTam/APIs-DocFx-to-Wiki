@@ -205,7 +205,7 @@ console.log(sidebarTitles);
 var ncp = require('ncp').ncp;
 
 ncp.limit = 16;
-var source = 'src';
+var source = testFolder;
 
 var destination = 'DocFx';
 
