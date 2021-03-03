@@ -217,24 +217,27 @@ console.log(source);
 // console.log('done!');
 //});
 
-// Load toc.html to be analysed (crawled) by Cheerio
-fs.readdir(docsFolder, function (err, files) {
-    //handling error
-    if (err) {
-        return console.log('Unable to scan directory: ' + err);
-    } 
-    //listing all files using forEach
-	files.forEach(function (file) {
-        var inputFilePath =file;
+var fileNames = fs.readdirSync(docsFolder);
 
-		var mdFilaData = fs.readFileSync(inputFilePath, 'utf8');
-		mdFilaData = mdFilaData.replace('(images/', '(https://github.com/KiaTam/APIs-DocFx-to-Wiki/blob/master/Documentation/Development/images/')
-		var outputFilePath = docFxPath.concat(file);
-		fs.writeFile(outputFilePath, sidebarTitles, function (err) {
-			if (err) return console.log(err);
-		});
-    });
-});
+for(var i=0;i<fileNames.length;i++)
+{
+		if (fileNames[i] != 'images')
+		{
+			var mdFilaData
+			var inputFilePath =docsFolder.concat('/');
+			var tmp = fileNames[i];
+			inputFilePath =inputFilePath.concat(tmp);
+			mdFilaData= fs.readFileSync(inputFilePath, 'utf8');
+			mdFilaData = mdFilaData.replaceAll('(images/', '(https://github.com/KiaTam/APIs-DocFx-to-Wiki/blob/master/Documentation/Development/images/')
+			var outputFilePath = docFxPath.concat('/');
+			var outputFilePath = outputFilePath.concat(fileNames[i]);
+			console.log(outputFilePath);
+			fs.writeFile(outputFilePath, mdFilaData, function (err) {
+				if (err) return console.log(err);
+			});
+		}
+}
+
 
 // sidebarTitles.concat(sidebarTitle1,'\r\n')
 
