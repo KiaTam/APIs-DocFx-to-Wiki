@@ -175,9 +175,9 @@ sidebarTitle1 = '* ['.concat(sidebarTitle0, '](https://github.com/KiaTam/APIs-Do
 sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
 sidebarTitles = sidebarTitles.concat('* Development Documentations','\r\n');
 
-var testFolder = 'Documentation/Development';
+var docsFolder = 'Documentation/Development';
 
-var files = fs.readdirSync(testFolder);
+var files = fs.readdirSync(docsFolder);
 
 for(i=0;i<files.length; i++)
 {
@@ -205,7 +205,7 @@ console.log(sidebarTitles);
 var ncp = require('ncp').ncp;
 
 ncp.limit = 16;
-var source = testFolder;
+var source = docsFolder;
 
 var destination = 'DocFx';
 
