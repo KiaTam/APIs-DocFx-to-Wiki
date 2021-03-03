@@ -160,8 +160,7 @@ for(i=0;i<iD[0].length; i++)
 	sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
 	
 }
-console.log('\r\n main');
-console.log(sidebarTitles);
+
 
 // add .md files of Development folder
 // text of Main menue of side-bar
@@ -192,13 +191,11 @@ for(i=0;i<files.length; i++)
 		sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
 		sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
 		sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
-		console.log('came here');
-		console.log(sidebarTitles);  
+
 	}
 
 };
-console.log('\r\n dev');
-console.log(sidebarTitles);
+
 
 
 // write Developer documentations
@@ -209,7 +206,6 @@ var source = docsFolder;
 
 var destination = 'DocFx';
 
-console.log(source);
 //ncp(source, destination, function (err) {
 // if (err) {
 //   return console.error(err);
@@ -232,9 +228,9 @@ for(var i=0;i<fileNames.length;i++)
 			var outputFilePath = docFxPath.concat('/');
 			var outputFilePath = outputFilePath.concat(fileNames[i]);
 			console.log(outputFilePath);
-			fs.writeFile(outputFilePath, mdFilaData, function (err) {
-				if (err) return console.log(err);
-			});
+			//fs.writeFile(outputFilePath, mdFilaData, function (err) {
+			//	if (err) return console.log(err);
+			//});
 		}
 }
 
@@ -248,8 +244,7 @@ fs.writeFile(outputFilePath, sidebarTitles, function (err) {
   if (err) return console.log(err);
 });
 
-console.log('after');
-console.log(sidebarTitles);
+
 
 
 
