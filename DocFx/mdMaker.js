@@ -210,19 +210,19 @@ var source = testFolder;
 var destination = 'DocFx';
 
 console.log(source);
-ncp(source, destination, function (err) {
- if (err) {
-   return console.error(err);
- }
- console.log('done!');
-});
+//ncp(source, destination, function (err) {
+// if (err) {
+//   return console.error(err);
+// }
+// console.log('done!');
+//});
 
 // Load toc.html to be analysed (crawled) by Cheerio
-var inputFilePath ='Documentation/Development/gitkraken-setup.md';
+var inputFilePath ='Documentation/Development/sampleMDFileWithImage.md';
 
 var mdFilaData = fs.readFileSync(inputFilePath, 'utf8');
 mdFilaData = mdFilaData.replace('(images/', '(https://github.com/KiaTam/APIs-DocFx-to-Wiki/blob/master/Documentation/Development/images/')
-var outputFilePath = docFxPath.concat('/gitkraken-setup.md');
+var outputFilePath = docFxPath.concat('/sampleMDFileWithImage.md');
 fs.writeFile(outputFilePath, mdFilaData, function (err) {
   if (err) return console.log(err);
 });
