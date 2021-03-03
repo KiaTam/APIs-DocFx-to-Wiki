@@ -228,9 +228,9 @@ for(var i=0;i<fileNames.length;i++)
 			var outputFilePath = docFxPath.concat('/');
 			var outputFilePath = outputFilePath.concat(fileNames[i]);
 			console.log(outputFilePath);
-			//fs.writeFile(outputFilePath, mdFilaData, function (err) {
-			//	if (err) return console.log(err);
-			//});
+			fs.writeFile(outputFilePath, mdFilaData, function (err) {
+				if (err) return console.log(err);
+			});
 		}
 }
 
