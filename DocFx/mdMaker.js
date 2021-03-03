@@ -217,6 +217,16 @@ ncp(source, destination, function (err) {
  console.log('done!');
 });
 
+// Load toc.html to be analysed (crawled) by Cheerio
+var inputFilePath ='Documentation/Development/gitkraken-setup.md';
+
+var mdFilaData = fs.readFileSync(inputFilePath, 'utf8');
+mdFilaData = mdFilaData.replace('(images/', '(https://github.com/KiaTam/APIs-DocFx-to-Wiki/blob/master/Documentation/Development/images/')
+var outputFilePath = docFxPath.concat('/gitkraken-setup.md');
+fs.writeFile(outputFilePath, mdFilaData, function (err) {
+  if (err) return console.log(err);
+});
+
 // sidebarTitles.concat(sidebarTitle1,'\r\n')
 
 // Writes the sidebarTitles to _Sidebar.md.
