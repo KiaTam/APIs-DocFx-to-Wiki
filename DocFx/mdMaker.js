@@ -196,8 +196,6 @@ for(i=0;i<files.length; i++)
 
 };
 
-
-
 // write Developer documentations
 var ncp = require('ncp').ncp;
 
@@ -219,7 +217,7 @@ for(var i=0;i<fileNames.length;i++)
 {
 		if (fileNames[i] != 'images')
 		{
-			var mdFilaData
+			var mdFilaData;
 			var inputFilePath =docsFolder.concat('/');
 			var tmp = fileNames[i];
 			inputFilePath =inputFilePath.concat(tmp);
