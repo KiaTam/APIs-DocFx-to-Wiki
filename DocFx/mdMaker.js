@@ -222,7 +222,7 @@ for(var i=0;i<fileNames.length;i++)
 			var tmp = fileNames[i];
 			inputFilePath =inputFilePath.concat(tmp);
 			mdFilaData= fs.readFileSync(inputFilePath, 'utf8');
-			mdFilaData = mdFilaData.replaceAll('(images/', '(https://github.com/KiaTam/APIs-DocFx-to-Wiki/blob/master/Documentation/Development/images/')
+			mdFilaData = mdFilaData.replace('(images/', '(https://github.com/KiaTam/APIs-DocFx-to-Wiki/blob/master/Documentation/Development/images/')
 			var outputFilePath = docFxPath.concat('/');
 			var outputFilePath = outputFilePath.concat(fileNames[i]);
 			console.log(outputFilePath);
