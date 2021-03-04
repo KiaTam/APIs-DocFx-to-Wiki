@@ -129,6 +129,7 @@ for(i=0;i<iD[1].length; i++)
 // Sorts and writes titles and sub-titles of Wiki-sidebar to the _Sidebar.md.
 // Writes the result in the _sidebar.md which is used on for the side-bar of Wiki.  
 var sidebarTitles = '';
+var wikiAddress ='](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/';
 for(i=0;i<iD[0].length; i++)
 {
 
@@ -143,7 +144,7 @@ for(i=0;i<iD[0].length; i++)
 		sidebarTitle0 = sidebarTitle0.replace('.html', '');
 		sidebarTitleMain = sidebarTitle0;
 		sidebarTitleMain = sidebarTitleMain.concat('.');
-		sidebarTitle1 = '* ['.concat(sidebarTitle0, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
+		sidebarTitle1 = '* ['.concat(sidebarTitle0, wikiAddress);
 		sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
 	}else 
 	{
@@ -153,7 +154,7 @@ for(i=0;i<iD[0].length; i++)
 		//shortens text of sub-menue by skipping the long beginning of it. e.g. skipps Volkswagen.Unity.Framework.Core. on the sub-menue
 		var sidebarTitleTmp = sidebarTitle0.replace(sidebarTitleMain, '');
 		
-		sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
+		sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , wikiAddress);
 		sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
 	}
 	
@@ -170,7 +171,7 @@ var sidebarTitleMain;
 sidebarTitle0 = 'Development Documentations';
 sidebarTitleMain = sidebarTitle0;
 sidebarTitleMain = sidebarTitleMain.concat('.');
-sidebarTitle1 = '* ['.concat(sidebarTitle0, '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
+sidebarTitle1 = '* ['.concat(sidebarTitle0, wikiAddress);
 sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
 sidebarTitles = sidebarTitles.concat('* Development Documentations','\r\n');
 
@@ -188,7 +189,7 @@ for(i=0;i<files.length; i++)
 		// shortens text of sub-menue by skipping the long beginning of it. e.g. skipps Volkswagen.Unity.Framework.Core. on the sub-menue
 		var sidebarTitleTmp = sidebarTitle0.replace(sidebarTitleMain, '');
 		
-		sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , '](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/');
+		sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , wikiAddress);
 		sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
 		sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
 
@@ -212,7 +213,7 @@ var destination = 'DocFx';
 //});
 
 var fileNames = fs.readdirSync(docsFolder);
-
+var imagesAddress = '(https://github.com/KiaTam/APIs-DocFx-to-Wiki/blob/master/Documentation/Development/images/';
 for(var i=0;i<fileNames.length;i++)
 {
 		if (fileNames[i] != 'images')
@@ -223,7 +224,7 @@ for(var i=0;i<fileNames.length;i++)
 			inputFilePath =inputFilePath.concat(tmp);
 			mdFilaData= fs.readFileSync(inputFilePath, 'utf8');
 			while(mdFilaData.includes('(images/')){			
-				mdFilaData = mdFilaData.replace('(images/', '(https://github.com/KiaTam/APIs-DocFx-to-Wiki/blob/master/Documentation/Development/images/')
+				mdFilaData = mdFilaData.replace('(images/', imagesAddress)
 			}
 			var outputFilePath = docFxPath.concat('/');
 			var outputFilePath = outputFilePath.concat(fileNames[i]);
