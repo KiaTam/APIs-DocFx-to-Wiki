@@ -189,7 +189,6 @@ for(var i=0;i<fileNames.length;i++)
 						mdFileData.lastIndexOf(firstString) + firstString.length, 
 						mdFileData.lastIndexOf("[View Source]"));
 					mdFileData = mdFileData.replace(mySubString, '');
-					mdFileData = mdFileData.replace('| [Improve this Doc]', '');
 					mdFileData = mdFileData.replace(firstString, '');
 				}
 			
