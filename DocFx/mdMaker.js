@@ -128,6 +128,7 @@ for(i=0;i<iD[1].length; i++)
 
 // Add .md files of Development folder
 // Text of Main menue of side-bar
+var wikiAddress ='](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/';
 var sidebarTitles = '';
 var sidebarTitle0 = '';
 var sidebarTitle1 = '';
@@ -192,7 +193,7 @@ for(var i=0;i<fileNames.length;i++)
 // 1. Sort and writes titles and sub-titles of Wiki-sidebar to the _Sidebar.md.
 // 2. Write the result in the _sidebar.md which is used for side-bar of the Wiki.  
 
-var wikiAddress ='](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/';
+// var wikiAddress ='](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/';
 for(i=0;i<iD[0].length; i++)
 {
 
