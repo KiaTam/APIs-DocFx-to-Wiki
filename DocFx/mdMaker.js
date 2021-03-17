@@ -173,7 +173,13 @@ for(var i=0;i<fileNames.length;i++)
 			var inputFilePath = docsFolder.concat('/');
 			var tmp = fileNames[i];
 			inputFilePath = inputFilePath.concat(tmp);
-			
+			mdFileData = fs.readFileSync(inputFilePath, 'utf8');
+			if (fileNames[i] != 'images')
+			{
+				while(mdFileData.includes('(images/')){			
+				mdFileData = mdFileData.replace('(images/', imagesAddress)
+				}
+			}
 		
 	
 	
