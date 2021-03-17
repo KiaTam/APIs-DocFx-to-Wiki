@@ -124,41 +124,6 @@ for(i=0;i<iD[1].length; i++)
    });
 }
 
-// 1. Sort and writes titles and sub-titles of Wiki-sidebar to the _Sidebar.md.
-// 2. Write the result in the _sidebar.md which is used for side-bar of the Wiki.  
-var sidebarTitles = '';
-var wikiAddress ='](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/';
-for(i=0;i<iD[0].length; i++)
-{
-
-    var sidebarTitle0 = '';
-	var sidebarTitle1 = '';
-	var sidebarTitleMain;
-	
-	if(iD[0][i] == 'expand-stub')
-	{
-		//text of Main menue of side-bar
-		sidebarTitle0 = iD[1][i];
-		sidebarTitle0 = sidebarTitle0.replace('.html', '');
-		sidebarTitleMain = sidebarTitle0;
-		sidebarTitleMain = sidebarTitleMain.concat('.');
-		sidebarTitle1 = '* ['.concat(sidebarTitle0, wikiAddress);
-		sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
-	}else 
-	{
-		//text of Sub menue of side-bar
-		sidebarTitle0 = iD[1][i];
-		sidebarTitle0 = sidebarTitle0.replace('.html', '');
-		//shortens text of sub-menue by skipping the long beginning of it. e.g. skipps Volkswagen.Unity.Framework.Core. on the sub-menue
-		var sidebarTitleTmp = sidebarTitle0.replace(sidebarTitleMain, '');
-		
-		sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , wikiAddress);
-		sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
-	}
-	
-	sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
-	
-}
 
 
 // Add .md files of Development folder
@@ -195,6 +160,7 @@ for(i=0;i<files.length; i++)
 
 };
 
+
 // 1. Modify address to the images in .md files.
 // 2. Write .md files to the folder.
 
@@ -221,6 +187,42 @@ for(var i=0;i<fileNames.length;i++)
 		}
 }
 
+
+// 1. Sort and writes titles and sub-titles of Wiki-sidebar to the _Sidebar.md.
+// 2. Write the result in the _sidebar.md which is used for side-bar of the Wiki.  
+var sidebarTitles = '';
+var wikiAddress ='](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/';
+for(i=0;i<iD[0].length; i++)
+{
+
+    var sidebarTitle0 = '';
+	var sidebarTitle1 = '';
+	var sidebarTitleMain;
+	
+	if(iD[0][i] == 'expand-stub')
+	{
+		//text of Main menue of side-bar
+		sidebarTitle0 = iD[1][i];
+		sidebarTitle0 = sidebarTitle0.replace('.html', '');
+		sidebarTitleMain = sidebarTitle0;
+		sidebarTitleMain = sidebarTitleMain.concat('.');
+		sidebarTitle1 = '* ['.concat(sidebarTitle0, wikiAddress);
+		sidebarTitle1= sidebarTitle1.concat(sidebarTitle0, ')');
+	}else 
+	{
+		//text of Sub menue of side-bar
+		sidebarTitle0 = iD[1][i];
+		sidebarTitle0 = sidebarTitle0.replace('.html', '');
+		//shortens text of sub-menue by skipping the long beginning of it. e.g. skipps Volkswagen.Unity.Framework.Core. on the sub-menue
+		var sidebarTitleTmp = sidebarTitle0.replace(sidebarTitleMain, '');
+		
+		sidebarTitle1 = '  * ['.concat(sidebarTitleTmp , wikiAddress);
+		sidebarTitle1 = sidebarTitle1.concat(sidebarTitle0, ')');
+	}
+	
+	sidebarTitles = sidebarTitles.concat(sidebarTitle1,'\r\n');
+	
+}
 
 // Write the sidebarTitles to _Sidebar.md.
 // Note: The file _Sidebar.md is pushed to GitHub-Wiki by in the GitHub workflow by github-wiki-publish-action
