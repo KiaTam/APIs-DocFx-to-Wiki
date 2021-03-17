@@ -180,7 +180,6 @@ for(var i=0;i<fileNames.length;i++)
 					mdFileData = mdFileData.replace('(images/', imagesAddress)
 				}
 			
-			
 				// Delete [improve this Doc] string
 				// var str = "[Improve this Doc](https://github.com/volkswagen-group-unity-framework/vwg.umodul.framework-next/new/1a8478eb6624e4979fcb0fbf0d521fa114f89cfa/apiSpec/new?filename=Volkswagen_Unity_Framework_ModuleDefinitionLanguage_MethodDefinition_AccessModifier.md&value=---%0Auid%3A%20Volkswagen.Unity.Framework.ModuleDefinitionLanguage.MethodDefinition.AccessModifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A) [View Source]";
 				var firstString = '[Improve this Doc]';
@@ -190,6 +189,7 @@ for(var i=0;i<fileNames.length;i++)
 						mdFileData.lastIndexOf(firstString) + firstString.length, 
 						mdFileData.lastIndexOf("[View Source]"));
 					mdFileData = mdFileData.replace(mySubString, '');
+					mdFileData = mdFileData.replace('| [Improve this Doc]', '');
 					mdFileData = mdFileData.replace(firstString, '');
 				}
 			
@@ -200,7 +200,6 @@ for(var i=0;i<fileNames.length;i++)
 				fs.writeFile(outputFilePath, mdFileData, function (err) {
 					// if (err) return console.log(err);
 				});
-		
 			}
 	
 	
