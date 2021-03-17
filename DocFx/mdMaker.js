@@ -196,7 +196,7 @@ for(var i=0;i<fileNames.length;i++)
 			fs.writeFile(outputFilePath, mdFileData, function (err) {
 			if (err) return console.log(err);
 			});
-		}
+		
 	
 	
 	
