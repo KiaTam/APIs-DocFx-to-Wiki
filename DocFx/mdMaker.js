@@ -124,8 +124,6 @@ for(i=0;i<iD[1].length; i++)
    });
 }
 
-
-
 // Add .md files of Development folder
 // Text of Main menue of side-bar
 var wikiAddress ='](https://github.com/KiaTam/APIs-DocFx-to-Wiki/wiki/';
@@ -133,7 +131,7 @@ var sidebarTitles = '';
 var sidebarTitle0 = '';
 var sidebarTitle1 = '';
 var sidebarTitleMain;
-sidebarTitle0 = 'Development Documentations';
+sidebarTitle0 = 'DevelopmentDocumentations';
 sidebarTitleMain = sidebarTitle0;
 sidebarTitleMain = sidebarTitleMain.concat('.');
 sidebarTitle1 = '* ['.concat(sidebarTitle0, wikiAddress);
@@ -170,23 +168,39 @@ var fileNames = fs.readdirSync(docsFolder);
 var imagesAddress = '(https://github.com/KiaTam/APIs-DocFx-to-Wiki/blob/master/Documentation/Development/images/';
 for(var i=0;i<fileNames.length;i++)
 {
-		if (fileNames[i] != 'images')
-		{
-			var mdFilaData;
+		
+			var mdFileData;
 			var inputFilePath =docsFolder.concat('/');
 			var tmp = fileNames[i];
 			inputFilePath =inputFilePath.concat(tmp);
-			mdFilaData= fs.readFileSync(inputFilePath, 'utf8');
-			while(mdFilaData.includes('(images/')){			
-				mdFilaData = mdFilaData.replace('(images/', imagesAddress)
+			mdFileData= fs.readFileSync(inputFilePath, 'utf8');
+			if (fileNames[i] != 'images')
+			{
+				while(mdFileData.includes('(images/')){			
+				mdFileData = mdFileData.replace('(images/', imagesAddress)
+				}
 			}
+			
+			//delete [improve this Doc] string
+			var str = "[Improve this Doc](https://github.com/volkswagen-group-unity-framework/vwg.umodul.framework-next/new/1a8478eb6624e4979fcb0fbf0d521fa114f89cfa/apiSpec/new?filename=Volkswagen_Unity_Framework_ModuleDefinitionLanguage_MethodDefinition_AccessModifier.md&value=---%0Auid%3A%20Volkswagen.Unity.Framework.ModuleDefinitionLanguage.MethodDefinition.AccessModifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A) [View Source]";
+			var firstString = '[Improve this Doc]'
+			var mySubString = str.substring(
+    			str.lastIndexOf("[Improve this Doc]") + firstString.length, 
+    			str.lastIndexOf("[View Source]"));
+			mdFileData = mdFileData.replace(mySubString, '');
+			
+			//write the result to the folder
 			var outputFilePath = docFxPath.concat('/');
-			var outputFilePath = outputFilePath.concat(fileNames[i]);
+			outputFilePath = outputFilePath.concat(fileNames[i]);
 			console.log(outputFilePath);
-			fs.writeFile(outputFilePath, mdFilaData, function (err) {
-				if (err) return console.log(err);
+			fs.writeFile(outputFilePath, mdFileData, function (err) {
+			if (err) return console.log(err);
 			});
 		}
+	
+	
+	
+	
 }
 
 
