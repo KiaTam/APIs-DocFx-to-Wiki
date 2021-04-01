@@ -3,7 +3,8 @@
 // Notes: 
 // - Path to DocFx could be modified by changing docFxPath.
 // - Input files (HTML) are in the 'same path'/__site/api/
-// - MD files are exported to the 'same path'/__site
+// - MD files are exported to the 'same path'/__site 
+//
 
 const fs=require('fs');
 
