@@ -1,8 +1,93 @@
 {
   "homepages": [],
   "source_base_path": "C:/Kiarash/Projects/DocFx/Working/20210125/APIs-DocFx-to-Wiki/DocFx",
-  "files": [],
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotnetNew.Class1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotnetNew.Class1.html",
+          "hash": "l8oUV9AoP2OZDB/3EHbUmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotnetNew.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotnetNew.html",
+          "hash": "Rt7ed5X1yIuoHiID7tsYnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SampleDotnetProject.Prg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SampleDotnetProject.Prg.html",
+          "hash": "GnjXasCKxQ1JJSkTwl60jA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SampleDotnetProject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SampleDotnetProject.html",
+          "hash": "ImCvs7j3lIonG8knAksF+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "UaioxWcF8k0j5rLIJqK2lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
   "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 2
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
     {
       "status": {
         "can_incremental": true,
@@ -14,5 +99,10 @@
       "processors": {}
     }
   ],
-  "version_info": {}
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
 }

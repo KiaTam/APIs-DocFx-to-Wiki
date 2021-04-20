@@ -1,0 +1,27 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: DotnetNew
+  name: DotnetNew
+  href: api/DotnetNew.html
+  commentId: N:DotnetNew
+  fullName: DotnetNew
+  nameWithType: DotnetNew
+- uid: DotnetNew.Class1
+  name: Class1
+  href: api/DotnetNew.Class1.html
+  commentId: T:DotnetNew.Class1
+  fullName: DotnetNew.Class1
+  nameWithType: Class1
+- uid: SampleDotnetProject
+  name: SampleDotnetProject
+  href: api/SampleDotnetProject.html
+  commentId: N:SampleDotnetProject
+  fullName: SampleDotnetProject
+  nameWithType: SampleDotnetProject
+- uid: SampleDotnetProject.Prg
+  name: Prg
+  href: api/SampleDotnetProject.Prg.html
+  commentId: T:SampleDotnetProject.Prg
+  fullName: SampleDotnetProject.Prg
+  nameWithType: Prg

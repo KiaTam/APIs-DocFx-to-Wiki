@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotnetNew
+  commentId: N:DotnetNew
+  id: DotnetNew
+  children:
+  - DotnetNew.Class1
+  langs:
+  - csharp
+  - vb
+  name: DotnetNew
+  nameWithType: DotnetNew
+  fullName: DotnetNew
+  type: Namespace
+  assemblies:
+  - DotnetNew
+references:
+- uid: DotnetNew.Class1
+  commentId: T:DotnetNew.Class1
+  name: Class1
+  nameWithType: Class1
+  fullName: DotnetNew.Class1

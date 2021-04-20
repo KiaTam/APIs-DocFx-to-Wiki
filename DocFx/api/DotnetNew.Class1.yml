@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotnetNew.Class1
+  commentId: T:DotnetNew.Class1
+  id: Class1
+  parent: DotnetNew
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Class1
+  nameWithType: Class1
+  fullName: DotnetNew.Class1
+  type: Class
+  source:
+    id: Class1
+    path: C:\Kiarash\Projects\DocFx\Working\20210125\APIs-DocFx-to-Wiki\src\DotnetNew\Class1.cs
+    startLine: 4
+  assemblies:
+  - DotnetNew
+  namespace: DotnetNew
+  syntax:
+    content: 'public class Class1 : object'
+    content.vb: >-
+      Public Class Class1
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: DotnetNew
+  commentId: N:DotnetNew
+  name: DotnetNew
+  nameWithType: DotnetNew
+  fullName: DotnetNew
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

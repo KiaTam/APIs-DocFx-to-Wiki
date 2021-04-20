@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SampleDotnetProject
 {
-    class Program
+    public class Prg
     {
         static void Main(string[] args)
         {

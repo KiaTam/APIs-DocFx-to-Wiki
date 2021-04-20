@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: SampleDotnetProject
+  commentId: N:SampleDotnetProject
+  id: SampleDotnetProject
+  children:
+  - SampleDotnetProject.Prg
+  langs:
+  - csharp
+  - vb
+  name: SampleDotnetProject
+  nameWithType: SampleDotnetProject
+  fullName: SampleDotnetProject
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: SampleDotnetProject.Prg
+  commentId: T:SampleDotnetProject.Prg
+  name: Prg
+  nameWithType: Prg
+  fullName: SampleDotnetProject.Prg
