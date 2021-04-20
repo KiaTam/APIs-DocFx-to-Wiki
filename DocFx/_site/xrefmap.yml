@@ -19,6 +19,25 @@ references:
   commentId: N:SampleDotnetProject
   fullName: SampleDotnetProject
   nameWithType: SampleDotnetProject
+- uid: SampleDotnetProject.MyConcreteClass
+  name: MyConcreteClass
+  href: api/SampleDotnetProject.MyConcreteClass.html
+  commentId: T:SampleDotnetProject.MyConcreteClass
+  fullName: SampleDotnetProject.MyConcreteClass
+  nameWithType: MyConcreteClass
+- uid: SampleDotnetProject.MyConcreteClass.Name
+  name: Name
+  href: api/SampleDotnetProject.MyConcreteClass.html#SampleDotnetProject_MyConcreteClass_Name
+  commentId: P:SampleDotnetProject.MyConcreteClass.Name
+  fullName: SampleDotnetProject.MyConcreteClass.Name
+  nameWithType: MyConcreteClass.Name
+- uid: SampleDotnetProject.MyConcreteClass.Name*
+  name: Name
+  href: api/SampleDotnetProject.MyConcreteClass.html#SampleDotnetProject_MyConcreteClass_Name_
+  commentId: Overload:SampleDotnetProject.MyConcreteClass.Name
+  isSpec: "True"
+  fullName: SampleDotnetProject.MyConcreteClass.Name
+  nameWithType: MyConcreteClass.Name
 - uid: SampleDotnetProject.Prg
   name: Prg
   href: api/SampleDotnetProject.Prg.html

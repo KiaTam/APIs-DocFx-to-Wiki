@@ -1,27 +1,30 @@
 ### YamlMime:ManagedReference
 items:
-- uid: SampleDotnetProject.Prg
-  commentId: T:SampleDotnetProject.Prg
-  id: Prg
+- uid: SampleDotnetProject.MyConcreteClass
+  commentId: T:SampleDotnetProject.MyConcreteClass
+  id: MyConcreteClass
   parent: SampleDotnetProject
-  children: []
+  children:
+  - SampleDotnetProject.MyConcreteClass.Name
   langs:
   - csharp
   - vb
-  name: Prg
-  nameWithType: Prg
-  fullName: SampleDotnetProject.Prg
+  name: MyConcreteClass
+  nameWithType: MyConcreteClass
+  fullName: SampleDotnetProject.MyConcreteClass
   type: Class
   source:
-    id: Prg
+    id: MyConcreteClass
     path: ''
-    startLine: 41
+    startLine: 17
   assemblies:
   - cs.temp.dll
   namespace: SampleDotnetProject
   syntax:
-    content: public class Prg
-    content.vb: Public Class Prg
+    content: 'public class MyConcreteClass : MyInterface'
+    content.vb: >-
+      Public Class MyConcreteClass
+          Implements MyInterface
   inheritance:
   - System.Object
   inheritedMembers:
@@ -38,6 +41,37 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: SampleDotnetProject.MyConcreteClass.Name
+  commentId: P:SampleDotnetProject.MyConcreteClass.Name
+  id: Name
+  parent: SampleDotnetProject.MyConcreteClass
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: MyConcreteClass.Name
+  fullName: SampleDotnetProject.MyConcreteClass.Name
+  type: Property
+  source:
+    id: Name
+    path: ''
+    startLine: 19
+  assemblies:
+  - cs.temp.dll
+  namespace: SampleDotnetProject
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: SampleDotnetProject.MyConcreteClass.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 references:
 - uid: SampleDotnetProject
   commentId: N:SampleDotnetProject
@@ -336,3 +370,15 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: SampleDotnetProject.MyConcreteClass.Name*
+  commentId: Overload:SampleDotnetProject.MyConcreteClass.Name
+  name: Name
+  nameWithType: MyConcreteClass.Name
+  fullName: SampleDotnetProject.MyConcreteClass.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

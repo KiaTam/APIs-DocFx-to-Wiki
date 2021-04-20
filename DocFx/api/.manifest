@@ -2,5 +2,7 @@
   "DotnetNew": "DotnetNew.yml",
   "DotnetNew.Class1": "DotnetNew.Class1.yml",
   "SampleDotnetProject": "SampleDotnetProject.yml",
+  "SampleDotnetProject.MyConcreteClass": "SampleDotnetProject.MyConcreteClass.yml",
+  "SampleDotnetProject.MyConcreteClass.Name": "SampleDotnetProject.MyConcreteClass.yml",
   "SampleDotnetProject.Prg": "SampleDotnetProject.Prg.yml"
 }

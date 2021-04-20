@@ -29,6 +29,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SampleDotnetProject.MyConcreteClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SampleDotnetProject.MyConcreteClass.html",
+          "hash": "mRsJ/AHZWUf5KBmKJaiVjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SampleDotnetProject.Prg.yml",
       "output": {
         ".html": {
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SampleDotnetProject.html",
-          "hash": "ImCvs7j3lIonG8knAksF+g=="
+          "hash": "0JsWsc8Kc4jokqPPX2di7g=="
         }
       },
       "is_incremental": false,
@@ -57,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "UaioxWcF8k0j5rLIJqK2lg=="
+          "hash": "7UVQUyCvkY8HxH0XF7MysA=="
         }
       },
       "is_incremental": false,
@@ -76,8 +88,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 2
+          "total_file_count": 5,
+          "skipped_file_count": 3
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

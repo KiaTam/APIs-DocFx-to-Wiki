@@ -7,5 +7,7 @@
 - uid: SampleDotnetProject
   name: SampleDotnetProject
   items:
+  - uid: SampleDotnetProject.MyConcreteClass
+    name: MyConcreteClass
   - uid: SampleDotnetProject.Prg
     name: Prg

@@ -4,6 +4,7 @@ items:
   commentId: N:SampleDotnetProject
   id: SampleDotnetProject
   children:
+  - SampleDotnetProject.MyConcreteClass
   - SampleDotnetProject.Prg
   langs:
   - csharp
@@ -15,6 +16,11 @@ items:
   assemblies:
   - cs.temp.dll
 references:
+- uid: SampleDotnetProject.MyConcreteClass
+  commentId: T:SampleDotnetProject.MyConcreteClass
+  name: MyConcreteClass
+  nameWithType: MyConcreteClass
+  fullName: SampleDotnetProject.MyConcreteClass
 - uid: SampleDotnetProject.Prg
   commentId: T:SampleDotnetProject.Prg
   name: Prg
